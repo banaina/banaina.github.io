@@ -9,6 +9,7 @@
 }
 
 body {
+    cursor: url("cursor.png"), auto;
     font-family: RobotoMono;
     font-style:normal;
     background-color: #212323;
@@ -32,3 +33,4 @@ body {
     margin-right: 100px; 
     margin-left: 100px;
 }
+
