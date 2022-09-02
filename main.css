@@ -11,16 +11,24 @@
 body {
     font-family: RobotoMono;
     font-style:normal;
-    margin-top: 75px;
-    margin-right: 100px;
-    margin-left: 100px;
     background-color: #212323;
     color: #FFFFFC;
 }
 
 .sidebar{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 75px;
     font-variant: small-caps;
     text-align: right;
     font-size: 6px;
     padding-top: 0.3in;
+}
+
+.intro{
+    font-size: 16px; 
+    font-family: IBMPlexSansKR; 
+    margin-top: 108px; 
+    margin-right: 100px; 
+    margin-left: 100px;
 }

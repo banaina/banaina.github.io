@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
     <head>
+        <title>Portfolio Website</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", intial-scale="1">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="main.css"> 
         <link rel="stylesheet" href="grid.css">
-
-
-
+        <link rel="stylesheet" href="order.css">
     </head>
 
-    <div id="introduction" style="float:left;">
-        <header style="font-size: 16px; font-family: IBMPlexSansKR; margin-top: 33px;">
-            <h1>HI, I'M ARRIYAN ALI</h1>
-        </header>
-    </div>
+    <div class="container">
+        <video autoplay muted loop id="firstPageBG">
+            <source src="videos/PageOneBackground.mp4" type="video/mp4">
+        </video>
 
-    <div id="sidebar-navigation" style="float:right;">
-        <header class="sidebar">
-            <h1>ABOUT ME</h1>
-            <h1>EXPERIENCE</h1>
-            <h1>PROJECTS</h1>
-            <h1>CONTACT ME</h1>
-        </header>
-    </div>
+        <img src="noise-sheet.png" alt="blank" class="image">
 
+        
+        <div id="introduction" style="float:left;" class="overlay-intro">
+            <header class="intro">
+                <h1>HI, I'M ARRIYAN ALI</h1>
+            </header>
+        </div>
+
+        <div id="sidebar-navigation" style="float:right;" class="overlay-nav">
+            <header class="sidebar">
+                <h1>ABOUT ME</h1>
+                <h1>EXPERIENCE</h1>
+                <h1>PROJECTS</h1>
+                <h1>CONTACT ME</h1>
+            </header>
+        </div>
+    </div>
 </html>
 
