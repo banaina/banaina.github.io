@@ -1,3 +1,3 @@
 # banaina.github.io
 
-###an early work in progress :/
+an early work in progress :/
