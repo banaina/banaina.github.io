@@ -7,9 +7,13 @@
     font-family: RobotoMono;
     src: url(fonts/RobotoMono-Light.ttf);
 }
+@font-face {
+    font-family: RobotoMonoBold;
+    src: url(fonts/RobotoMono-Bold.ttf);
+}
 
 body {
-    cursor: url("cursor.png"), auto;
+    cursor: url("photos/cursor.png"), auto;
     font-family: RobotoMono;
     font-style:normal;
     background-color: #212323;
@@ -32,5 +36,14 @@ body {
     margin-top: 108px; 
     margin-right: 100px; 
     margin-left: 100px;
+}
+
+.intro_para{
+    font-size: 12px;
+    font-family: RobotoMonoBold;
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 570px;
+    color: #0b0c0c;
 }
 

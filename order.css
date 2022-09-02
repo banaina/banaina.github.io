@@ -19,13 +19,13 @@
 
 .container { position:relative; }
 
-.overlay-nav {
+.overlay-rightbias {
     position:absolute;
     top: 0;
     right: 0;
     z-index:2;
 }
-.overlay-intro {
+.overlay-leftbias {
     position:absolute;
     top: 0;
     left: 0;
