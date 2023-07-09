@@ -1,15 +1,9 @@
-/* A sheet specifying order of elements via z-index */
-#firstPageBG {
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 0;
-}
+/* A sheet specifying order of elements z-index */
 
 .image{
     z-index: 1;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width:100%; 
     height:fit-content;
@@ -17,17 +11,23 @@
     padding: 0;
 }
 
-.container { position:relative; }
-
-.overlay-rightbias {
-    position:absolute;
-    top: 0;
-    right: 0;
-    z-index:2;
-}
-.overlay-leftbias {
-    position:absolute;
+.imagerelative{
+    z-index: 1;
+    position: absolute;
+    object-fit: fill;
     top: 0;
     left: 0;
+    width:100%; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container { position:relative; }
+
+
+/*hi im arriyan blurb at top of page*/
+.introorder {
+    position:relative;
     z-index:2;
 }

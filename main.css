@@ -1,49 +1,72 @@
 
 @font-face {
-    font-family: IBMPlexSansKR;
-    src: url(fonts/IBMPlexSansKR-ExtraLight.ttf);
+    font-family: InterMedium;
+    src: url(fonts/Inter-Medium.ttf);
 }
+
 @font-face {
-    font-family: RobotoMono;
-    src: url(fonts/RobotoMono-Light.ttf);
+    font-family: InterRegular;
+    src: url(fonts/Inter-Regular.ttf);
 }
+
 @font-face {
-    font-family: RobotoMonoBold;
-    src: url(fonts/RobotoMono-Bold.ttf);
-}
+    font-family: PPMoriRegular;
+    src: url(fonts/PPMori-Regular.ttf);
+  }
 
 body {
     cursor: url("photos/cursor.png"), auto;
-    font-family: RobotoMono;
+    font-family: InterMedium;
     font-style:normal;
-    background-color: #212323;
-    color: #FFFFFC;
+    background-color: #ffffff !important;
 }
 
+h1 {
+    color: #000000;
+}
+
+/* for side navigation menu */
 .sidebar{
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 75px;
-    font-variant: small-caps;
+    position: sticky;
+    float:right;
+    font-family: InterMedium;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    margin-top: 80px;
     text-align: right;
-    font-size: 6px;
+    font-size: 20px;
     padding-top: 0.3in;
+    position: sticky;
+    z-index: 2;
+    right: 0;
+    color: #000000;
 }
 
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+/* for "hi im arriyan" exerpt */
 .intro{
-    font-size: 16px; 
-    font-family: IBMPlexSansKR; 
-    margin-top: 108px; 
-    margin-right: 100px; 
-    margin-left: 100px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 90px; 
+    font-family: PPMoriRegular; 
+    color: #000000;
+    text-align: left;
 }
 
-.intro_para{
-    font-size: 12px;
-    font-family: RobotoMonoBold;
-    text-align: center;
-    margin-top: 400px;
-    margin-left: 570px;
-    color: #0b0c0c;
-}
+/* for "siat undergraduate" paragraph */
+.intropara{
+    color: #0000;
+    font-family: InterRegular;
+    font-size: 20px;
+    font-style: lighter;
+    text-align: left;
+    color: #000000;
+    padding-left: 60%;
 
+}
