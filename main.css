@@ -87,3 +87,13 @@ h1 {
     width: auto;
     height: 100%;
 }
+
+.contactDetails{
+    padding-top: 100px;
+    font-family: PPMoriRegular;
+    font-size:x-large;
+    font-weight: lighter;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+
+}

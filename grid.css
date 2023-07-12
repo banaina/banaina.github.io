@@ -35,6 +35,9 @@
     .projectsHeader{
         padding-top: 10px;
     }
+    .contactDetails{
+        padding-top: 10px;
+    }
 }
 
 @media (max-width: 40rem){
@@ -52,6 +55,9 @@
         padding-left: 20%;
     }
     .projectsHeader{
+        padding-top: 0px;
+    }
+    .contactDetails{
         padding-top: 0px;
     }
 }
