@@ -51,7 +51,11 @@
         font-size: 40px;
     }
     .intropara{
-        font-size: 11px;
+        font-size: 10px;
+        padding-left: 20%;
+    }
+    .clickableText{
+        font-size: 10px;
         padding-left: 20%;
     }
     .projectsHeader{
