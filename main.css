@@ -21,8 +21,8 @@ body {
     background-color: #ffffff !important;
 }
 
-h1 {
-    color: #000000;
+h2 {
+    padding-bottom: 570px;
 }
 
 a:hover{
@@ -55,6 +55,18 @@ a:hover{
 	top: 0;
 }
 
+.sideNavbar{
+    font-family: InterRegular;
+    font-size:x-small;
+    color: #727272;
+    font-weight: bold;
+    text-decoration: none;
+}
+.sideNavbar a:hover{
+    font-family: InterMedium;
+    background-color: #000000;
+}
+
 /* for "hi im arriyan" exerpt */
 .intro{
     font-weight: lighter;
@@ -63,6 +75,7 @@ a:hover{
     font-family: PPMoriRegular; 
     color: #000000;
     text-align: left;
+    padding-bottom: 5px;
 }
 
 /* for "siat undergraduate" paragraph */
@@ -90,12 +103,15 @@ a:hover{
     font-size:xx-large;
     font-weight: lighter;
     border-bottom: 1px solid black;
+    padding-right: 10px;
     padding-bottom: 3px;
 }
 
 .projectsImg{
     width: 100%;
     height: auto;
+    padding-right: 10px;
+    padding-bottom: 30px;
 }
 
 .contactDetails{

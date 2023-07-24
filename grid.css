@@ -1,6 +1,7 @@
 *{
     box-sizing:border-box;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .grid{
@@ -38,6 +39,12 @@
     .contactDetails{
         padding-top: 10px;
     }
+    .sideNavbar{
+        font-size: x-small;
+    }
+    h2{
+        padding-bottom: 0px;
+    }
 }
 
 @media (max-width: 40rem){
@@ -63,6 +70,12 @@
     }
     .contactDetails{
         padding-top: 0px;
+    }
+    .sideNavbar{
+        font-size: xx-small;
+    }
+    h2{
+        padding-bottom: 0px;
     }
 }
 

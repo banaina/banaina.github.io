@@ -11,18 +11,16 @@
         <link rel="stylesheet" href="order.css">
     </head>
 
-
     <body style="padding-left: 50px;">
-
          <!--SIDEBAR-->
-        <nav id="navbar" class="sidebar sticky">
-            <h6 style="padding-bottom:30px;">ABOUT</h6>
-            <h6 style="padding-bottom:30px;">PROJECTS</h6>
-            <h6 style="padding-bottom:30px;">CONTACT ME</h6>
+        <nav id="change" class="sidebar sticky">
+            <a id="aboutNav" href="#about" class="sideNavbar">ABOUT<br><br></a>
+            <a id="projectsNav" href="#projects" class="sideNavbar"">PROJECTS<br><br></a>
+            <a id="contactNav" href="#contact" class="sideNavbar">CONTACT ME<br><br></a>
         </nav>
 
-        <section>
-            <div class="grid full-column less-column">
+        <div class="grid full-column less-column">
+            <section id="about">
                 <div  style="padding-top: 359px;" class="row">
                 </div>
 
@@ -32,7 +30,7 @@
                     </h1>
                 </div>
 
-                <div class="row">
+                <div class="row" style="padding-bottom: 30px;">
                     <p class="intropara">An undergraduate student at <br>Simon Fraser 
                         University studying <br>Interactive Arts and 
                         Technology.</p>
@@ -41,7 +39,9 @@
                         Check out my resume →
                     </a>
                 </div>
+            </section>
 
+            <section id="projects">
                 <div class="row">
                     <h2 class="projectsHeader">Example Project</h2>
                     <h1><br><br></h1>
@@ -53,30 +53,21 @@
                     <h1><br><br><br</h1>
                     <img class="projectsImg" src="photos/projectsplaceholder.png" alt="project image">
                 </div>
+            </section>
 
+            <section id="contact">
                 <div class="row">
                     <p class="contactDetails">
                         Connect | Email
                     </p>
-                    <h1><br><br></h1>
+                    <!--adding a little of empty space at end of page for better scrolling-->
+                    <h2><br></h2>
                 </div>
-
-                <div class="row">
-                </div>
-
-                <div class="row">
-                </div>
-
-                <div class="row">
-                </div>
-            
-            </div>
-         </section>
-
-        <footer>
-        </footer>
-
+            </section>
+        </div>
+        <script language="JavaScript" type="text/javascript" src="jquery-3.7.0.js"></script>   
+        <script language="JavaScript" type="text/javascript" src="script.js"></script>
     </body>
-
+    
 </html>
 
