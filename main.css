@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: InterVar;
+    src: url(fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+
+@font-face {
     font-family: PPMoriRegular;
     src: url(fonts/PPMori-Regular.ttf);
   }
@@ -100,6 +105,23 @@ a:hover{
     border-bottom: 1px solid black;
     padding-right: 10px;
     padding-bottom: 3px;
+}
+
+.projDescription{
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: InterVar;
+    font-weight: 300;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+.projTools{
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: InterVar;
+    font-weight:500;
+    padding-right: 10px;
+    padding-bottom: 40px;
 }
 
 .projectsImg{
