@@ -23,13 +23,16 @@ body {
     font-family: InterMedium;
     font-style:normal;
     background-color: #ffffff !important;
+    padding-left: 50px;
+}
+
+section{
+    height: min-content;
 }
 
 a:hover{
     color:#000000
 }
-
-
 
 /* for side navigation menu */
 .sidebar{
@@ -138,5 +141,4 @@ a:hover{
     font-weight: lighter;
     border-bottom: 1px solid black;
     padding-bottom: 3px;
-
 }

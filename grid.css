@@ -8,10 +8,8 @@
     display: grid;
 }
 
-
 .column{
     float: left;
-    height: min-content;
 } 
 .left{
     width: 30%;
@@ -33,7 +31,7 @@
 
 @media (max-width: 60rem){
     .full-column{
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
         grid-auto-flow: column;
     }
     .intro{
@@ -60,9 +58,11 @@
 }
 
 @media (max-width: 40rem){
-    
+    .add-gutters{
+        grid-row-gap: 50px;
+    }
     .less-column, .full-column{
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
         grid-template-columns: auto;
         grid-auto-flow: column;
     }
@@ -98,6 +98,9 @@
 }
 
 @media (max-width: 25rem){
+    .add-gutters{
+        grid-row-gap: 20px;
+    }
     .projDescription{
         font-size: 8px;
     }
