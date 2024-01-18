@@ -113,8 +113,9 @@
     }
     .sideNavbar{
         font-size: xx-small;
-        background: rgb(0, 0, 0); /* for older browsers that dont support rgba */
-    background: rgba(0, 0, 0, 0.2);
+        background: rgb(200, 200, 200); /* for older browsers that dont support rgba */
+        background: rgba(200, 200, 200, 0.8);
+        border-radius: 4px;
     }
 }
 
