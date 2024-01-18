@@ -87,6 +87,10 @@ a:hover{
     padding-left: 60%;
 }
 
+.homepage{
+    padding-bottom: 220px;
+}
+
 .clickableText{
     color: #484848;
     font-family: InterRegular;

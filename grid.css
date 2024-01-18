@@ -92,9 +92,6 @@
     .sideNavbar{
         font-size: xx-small;
     }
-    h2{
-        padding-bottom: 0px;
-    }
 }
 
 @media (max-width: 25rem){
