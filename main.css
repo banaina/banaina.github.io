@@ -142,3 +142,29 @@ a:hover{
     border-bottom: 1px solid black;
     padding-bottom: 3px;
 }
+
+/* Code below references: https://www.w3schools.com/howto/howto_css_image_overlay_zoom.asp*/
+/*The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    top: 118px;
+    bottom: 50px;
+    left: 0;
+    right: 10px;
+    background-color: #00000038;
+    overflow: hidden;
+    width: 99%;
+    height: 59.3%;
+    border-radius: 8px;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  /* When you mouse over the container, the overlay text will "zoom" in display */
+  .imgContainer:hover .overlay {
+    transform: scale(1);
+  }
+  /* Container needed to position the overlay. Adjust the width as needed */
+.imgContainer {
+    position: relative;
+    width: 100%;
+  }
