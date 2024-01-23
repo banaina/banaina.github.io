@@ -25,6 +25,11 @@ body {
     background-color: #ffffff !important;
     padding-left: 50px;
 }
+li{
+    font-size: 16px;
+    font-family: InterVar;
+    font-weight: 300; 
+}
 
 a:hover{
     color:#000000
@@ -112,6 +117,7 @@ a:hover{
 
 .projDescription{
     padding-top: 20px;
+    padding-right: 50px;
     font-size: 16px;
     font-family: InterVar;
     font-weight: 300;
@@ -133,6 +139,30 @@ a:hover{
     padding-right: 10px;
     padding-bottom: 50px;
 }
+.projectsImg:hover{
+    opacity: 0.7;
+}
+
+/* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+}
+
+.normalImg{
+    max-width: 100%;
+    height: auto;
+
+}
 
 .contactDetails{
     padding-top: 100px;
@@ -143,28 +173,44 @@ a:hover{
     padding-bottom: 3px;
 }
 
-/* Code below references: https://www.w3schools.com/howto/howto_css_image_overlay_zoom.asp*/
-/*The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
-    position: absolute;
-    top: 118px;
-    bottom: 50px;
-    left: 0;
-    right: 10px;
-    background-color: #00000038;
-    overflow: hidden;
-    width: 99%;
-    height: 59.3%;
-    border-radius: 8px;
-    transform: scale(0);
-    transition: .3s ease;
-  }
-  /* When you mouse over the container, the overlay text will "zoom" in display */
-  .imgContainer:hover .overlay {
-    transform: scale(1);
-  }
-  /* Container needed to position the overlay. Adjust the width as needed */
-.imgContainer {
-    position: relative;
-    width: 100%;
-  }
+.projPgTitle{
+    font-size: 96px;
+    font-weight: lighter;
+    font-family: PPMoriRegular;
+}
+
+.imagineJacketOverview{
+    padding-top: 140px;
+    margin-right: 370px;
+    font-size: 16px;
+    font-family: InterVar;
+    font-weight: 300;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+
+.sideHeader{
+    font-size: 48px;
+    font-family: PPMoriRegular;
+    font-weight: lighter;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    margin-top: -58px;
+}
+
+.sectionHeader{
+    font-family: PPMoriRegular;
+    color: #8C8C8C;
+    font-size: 32px;
+    padding-bottom: 18px;
+}
+
+.projectInfo{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.projInfoStyle{
+    font-size: 16px;
+    font-family: InterVar;
+    font-weight: 300;
+}
