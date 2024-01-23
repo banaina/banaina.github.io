@@ -51,7 +51,7 @@
     .projDescription{
         font-size: 16px;
     }
-    .projectInfo{
+    .projectInfoStyle{
         font-size: 16px;
     }
     li{
@@ -98,7 +98,7 @@
     .projDescription{
         font-size: 10px;
     }
-    .projectInfo{
+    .projectInfoStyle{
         font-size: 10px;
         margin-left: -75px;
         margin-right: -50px;
@@ -144,7 +144,7 @@
     .projDescription{
         font-size: 8px;
     }
-    .projectInfo{
+    .projectInfoStyle{
         font-size: 8px;
     }
     li{
