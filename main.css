@@ -147,7 +147,7 @@ a:hover{
 .normalImg{
     max-width: 100%;
     height: auto;
-    
+
 }
 
 /* modal reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js */
@@ -168,6 +168,10 @@ a:hover{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
   
 #myImg:hover {opacity: 0.7;}
@@ -258,4 +262,11 @@ to {transform: scale(1)}
     font-size: 16px;
     font-family: InterVar;
     font-weight: 300;
+}
+
+.center-align{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
