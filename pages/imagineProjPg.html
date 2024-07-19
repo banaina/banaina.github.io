@@ -6,12 +6,11 @@
         <title>The Imagine Jacket</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../main.css"> 
-        <link rel="stylesheet" href="../grid.css">
+        <link rel="stylesheet" href="../projgrid.css">
         <link rel="stylesheet" href="../order.css">
     </head>
 
     <body>
-
         <!--SIDEBAR-->
         <nav id="change" class="sidebar sticky">
             <a id="overviewNav" href="#overview" class="sideNavbar">OVERVIEW<br><br></a>
@@ -19,92 +18,80 @@
             <a id="initialSolNav" href="#initialSol" class="sideNavbar">INITIAL SOLUTION<br><br></a>
             <a id="finalProdNav" href="#finalProd" class="sideNavbar">FINAL PRODUCT<br><br></a>
         </nav>
-
         <a href="../index.html">
             <img  src="../photos/backButton.png" class="normalImg" style="padding-top: 105px; max-width: 50%;" alt="back to homepage">
         </a>
-        
-        <div class="grid full-column less-column">
 
-            <section id="overview">
-                <div style="padding-top: 100px;" class="row">
-                    <div class="row">
-                        <h1 class="projPgTitle">
-                            The Imagine Jacket
-                        </h1>
-                    </div>
+        <h1  class="projPgTitle" id="overview" >
+            The Imagine Jacket
+        </h1>
 
-                    <div class="row">
-                        <div class="column left" style="width: 45%;">
-                            <img  src="../photos/jacket.png" class="normalImg" style="margin-left:-58px;" alt="The jacket!">
-                        </div>
-
-                        <div class="column right" style="width: 55%;">
-                            <p class="imagineJacketOverview">The Imagine Jacket is adjustable jacket that 
-                                utilizes deep pressure therapy and temperature 
-                                regulation to create a comfortable environment 
-                                for the individual wearing it. It features discreet,
-                                 easily accessible controls and is accompanied 
-                                 by a mobile application that offers 
-                                 further customization and monitoring options.
-                                 <br><br><br>
-                                 I worked in a team of three, 
-                                 alongside Elizabeth Duong-Thai and Keyaan Vegdani. My role 
-                                 included the design and programming of the 
-                                 mobile application, as well as coding Arduino to 
-                                 Processing communication between the app 
-                                 and physical protype.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="padding-top: 100px;" class="column">
-                    <div class="column left" style="width: 20%;">
-                        <h2 class="sideHeader">The Goal</h2>
-                    </div>
-
-                    <div class="column right projectInfo" style="width: 80%;">
-                        <p class="projInfoStyle" >
-                            In order to properly understand the struggles that young adults with ASD face, we conducted 
-                            thorough research on the topic, along with interviewing an individual with ASD. 
+        <div style="padding-top: 2em;" class="row">
+            <div class="grid">
+                <div class="row"></div>
+                <div class="row">
+                    <div class="column">
+                        <p class="projInfoStyle" style="margin-right: 8em;">
+                            The Imagine Jacket is adjustable jacket that 
+                            utilizes deep pressure therapy and temperature 
+                            regulation to create a comfortable environment 
+                            for the individual wearing it. It features discreet,
+                            easily accessible controls and is accompanied 
+                            by a mobile application that offers 
+                            further customization and monitoring options.
                             <br><br>
-                            We found that possible concerns included:
-                            <li>Anxiety</li>
-                            <li>Low focus</li>
-                            <li>Sensory overload</li>
-                            <br>
+                            I worked in a team of three, 
+                            alongside Elizabeth Duong-Thai and Keyaan Vegdani. My role 
+                            included the design and programming of the 
+                            mobile application, as well as coding Arduino to 
+                            Processing communication between the app 
+                            and physical protype.
                         </p>
-                        <p class="projInfoStyle">We aimed to create a discrete and comforting solution to help regulate these feelings.</p>
                     </div>
                 </div>
 
-            </section>
+                <div class="row" style="grid-column:span 2;">
+                    <img src="../photos/imaginerotating.gif" class="normalImg" style="width: 70%; display: block; margin-right: auto; margin-left: auto; padding-bottom: 5em;">
+                </div>
 
-            <section id="insight">
-                <div style="padding-top: 100px;" class="row">
-                    <div class="column left" style="width: 20%;">
-                        <h2 class="sideHeader">
-                            Insight
-                        </h2>
+                <div class="row" >
+                    <h3 class="sideHeader">The Goal</h3>
+                </div>
+                <div class="row" >
+                    <div class="column">
+                        <p class="projInfoStyle">
+                            <p class="projInfoStyle" >
+                                In order to properly understand the struggles that young adults with ASD face, we conducted 
+                                thorough research on the topic, along with interviewing an individual with ASD. 
+                                <br><br>
+                                We found that possible concerns included:
+                                <li>Anxiety</li>
+                                <li>Low focus</li>
+                                <li>Sensory overload</li>
+                            </p>
+                            <p class="projInfoStyle">We aimed to create a discrete and comforting solution to help regulate these feelings.</p>
+                        </p>
                     </div>
+                </div>
 
-                    <div class="column right projectInfo" style="width: 80%;">
+                <div class="row" >
+                    <h3 class="sideHeader" id="insight">Insight</h3>
+                </div>
+                <div class="row" >
+                    <div class="column">
                         <h3 class="sectionHeader ">Meet Sersha</h3>
-                        <p class="projInfoStyle" >
+                        <p class="projInfoStyle">
                             We interviewed Sersha, a 14 year old girl living with Asperger's in order to gain closer insight into our 
                             user group and pinpoint their central needs. 
                             We used an empathy map to acknowledge and illustrate her concerns. 
                             <br><br>
-                            <img  id="myImg" src="../photos/empathymap.png" class="normalImg myImages"  alt="empathy map">
+                            <img  id="myImg" src="../photos/empathymap.png" class="normalImg myImages"  alt="An empathy map showcasing Sersha's thoughts and issues she faces in relation to ASD">
                             <br><br>
                             The main points we observed:
                             <li>Sound isolation, deep pressure therapy and mindfulness are extremely helpful.</li>
                             <li>Those with ASD are often overwhelmed and anxious.</li>
                             <li>Those with ASD don’t want to feel isolated and different.</li>
-                            <br>
                         </p>
-
                         <p class="projInfoStyle" >
                             Deep pressure therapy helps to relax the nervous system and aids in minimizing sensory overload. We 
                             also noted that Sersha often feels overstimulated in loud environments, she likes to use her 
@@ -112,7 +99,6 @@
                             <br><br>
                             She also voiced her concerns about feeling like she stands out next to other kids or that she looks 
                             different. Therefore, my team and I aimed to create a product that would be subtle and comfortable.
-                            <br><br><br><br>
                         </p>
 
                         <h3 class="sectionHeader ">Mapping Sersha’s Experience</h3>
@@ -120,7 +106,7 @@
                             the diagram below maps out both the user experience of our persona, and the three major pain points 
                             we identified.
                             <br><br>
-                            <img  id="myImg" src="../photos/xpMap.png" class="normalImg myImages"  alt="user experience map">
+                            <img  id="myImg" src="../photos/xpMap.png" class="normalImg myImages"  alt="A user experience map highlighting Sersha's main areas of concern">
                             <br><br>
                             The experience can be divided into using existing interventions (headphones and weighted vest) or nothing. 
                             <br><br>
@@ -128,7 +114,6 @@
                             <li>Those with ASD almost always become distracted and anxious without interventions</li> 
                             <li>With interventions they are bullied</li>
                             <li>The most effective interventions are often too late in the experience</li>
-                            <br><br><br><br>
                         </p>
 
                         <h3 class="sectionHeader ">Competitive Analysis</h3>
@@ -141,23 +126,17 @@
                             The Imagine Jacket takes inspiration from the Snug Vest’s efficient air pressure distribution, although 
                             it also addresses several other pain points present within the ASD community which sets it apart from 
                             many existing products.
-                            <br><br><br><br>
                         </p>
                     </div>
                 </div>
-            </section>
 
-            <section id="initialSol">
-                <div style="padding-top: 100px;" class="row">
-                    <div class="column left" style="width: 20%;">
-                        <h2 class="sideHeader">
-                            Initial Solution
-                        </h2>
-                    </div>
-
-                    <div class="column right projectInfo" style="width: 80%;">
-                        <h3 class="sectionHeader">Physical Prototyping</h3>
-                        <p class="projInfoStyle" >
+                <div class="row" >
+                    <h3 class="sideHeader" id="initialSol">Initial Solution</h3>
+                </div>
+                <div class="row" >
+                    <div class="column">
+                        <h3 class="sectionHeader ">Physical Prototyping</h3>
+                        <p class="projInfoStyle">
                             We believed our solution should be based upon five important area’s of focus:
                             <li>Deep Pressure Therapy</li>
                             <li>Managing Anxiety</li>
@@ -166,7 +145,6 @@
                             <li>Soundscape Control</li>
                             <br><br>
                         </p>
-
                         <p class="projInfoStyle">
                             We began with the general concept of building a jacket with embedded technological enhancements. 
                             This article of clothing appears as an ordinary jacket, although it contains integrated features such as 
@@ -183,18 +161,18 @@
                             of the jacket. The air travels through a belt shaped area around the middle of the jacket so that 
                             pressure can be felt as a gentle squeeze. 
                             <br><br>
-                            <img  id="myImg" src="../photos/airpumpIdeation.png" class="normalImg myImages"  alt="air circulation">
+                            <img  id="myImg" src="../photos/airpumpIdeation.png" class="normalImg myImages"  alt="Our initial approach of using air circulation for pressure control throughout the jacket">
                             <br><br>
                             This pressure can be combined with temperature control to imitate a warm hug. Change in 
                             temperature is controlled through a potentiometer which is attached to heating pads that respond 
                             accordingly.
                             <br><br>
-                            <img  id="myImg" src="../photos/tempIdeation.png" class="normalImg myImages"  alt="heat control">
+                            <img  id="myImg" src="../photos/tempIdeation.png" class="normalImg myImages"  alt="Sketches mapping out how we would implement temperature control">
                             <br><br>
                             If the wearer begins to feel too warm however, the jacket offers a detachable hood and sleeves 
                             which are connected by Velcro for easy removal and attachment.
                             <br><br>
-                            <img id="myImg" src="../photos/fabricIdeation.png" class="normalImg myImages"  alt="jacket design">
+                            <img id="myImg" src="../photos/fabricIdeation.png" class="normalImg myImages"  alt="Sketches displaying our design for detachable sleeves and hood">
                             <br><br>
                             There is also a  galvanic skin response (GSR) sensor at the cuff of the sleeve that the user can wear 
                             around their fingers to observe their current emotional state. This would help them or their caretaker 
@@ -206,8 +184,7 @@
                             complete a task they can unravel this pocket, unhook their favorite toy, and conveniently put 
                             everything back when they wish to do so.
                             <br><br>
-                            <img id="myImg" src="../photos/toysIdeation.png" class="normalImg myImages"  alt="fidget toys">
-                            <br><br><br><br>
+                            <img id="myImg" src="../photos/toysIdeation.png" class="normalImg myImages"  alt="Designing the additional fidget toy compartment">
                         </p>  
                         
                         <h3 class="sectionHeader">Application Prototyping</h3>
@@ -221,33 +198,20 @@
                             would likely cause more confusion for the user. We concluded that a mobile app with the main 
                             purpose of monitoring was the most efficient mode of interaction.
                             <br><br>
-                            On the left below is our very first digital prototype as a web application and on the right is the an early 
+                            Below is our very first digital prototype as a web application, followed by an early 
                             mobile app wireframe, designed to include two-way control between the app and the jacket.
-                            <br><br>
                         </p>
-                        <div class="column left" style="width: 76.6%; height: 420px;">
-                            <img id="myImg" src="../photos/webProtoGif.gif" class="normalImg myImages" style="border-radius: 8px;"  alt="web app">
-                        </div>
-                        <div class="column right" style="width: 23.4%; height: 420px;">
-                            <img id="myImg" src="../photos/earlyprotogif.gif" class="normalImg myImages" style="border-radius: 8px;" alt="early mobile app">
-                        </div>
-                        <p class="projInfoStyle">
-                            <br><br><br><br>
-                        </p>
+                        <img id="myImg" src="../photos/webProtoGif.gif" class="normalImg myImages" style="padding-bottom: 1em;" alt="The first prototype, a desktop application">
+                        <img id="myImg" src="../photos/earlyprotogif.gif" class="normalImg"  style="width: 30%; display: block; margin-left: auto; margin-right: auto;" alt="The initial prototype after pivoting to a mobile application">
                     </div>
                 </div>
-            </section>
 
-            <section id="finalProd">
-                <div style="padding-top: 100px; padding-bottom: 100px;" class="row">
-                    <div class="column left" style="width: 20%;">
-                        <h2 class="sideHeader">
-                            Final Product
-                        </h2>
-                    </div>
-
-                    <div class="column right projectInfo" style="width: 80%;">
-                        <h3 class="sectionHeader">The Jacket</h3>
+                <div class="row" >
+                    <h3 class="sideHeader" id="finalProd">Final Product</h3>
+                </div>
+                <div class="row" >
+                    <div class="column">
+                        <h3 class="sectionHeader ">The Jacket</h3>
                         <p class="projInfoStyle">
                             Our adaptability helped us persevere through this project as we encountered many technical issues, 
                             along with a couple faulty components. Our initial idea of air pressure worked well in theory but fell 
@@ -256,26 +220,26 @@
                             as the water provided a comforting weighted feel and did a great job at moving pressure between the 
                             two (back and front) pockets. 
                             <br><br>
-                            <img id="myImg" src="../photos/airbag.png" class="normalImg myImages" alt="ideation">
+                            <img id="myImg" src="../photos/airbag.png" class="normalImg myImages" style="display: block; margin-left: auto; margin-right: auto;"alt="Our ideation process for implementing air pressure">
                             <br>
-                            <img id="myImg" src="../photos/waterdiagram.png" class="normalImg myImages" alt="water diagram">
+                            <img id="myImg" src="../photos/waterdiagram.png" class="normalImg myImages"style="display: block; margin-left: auto; margin-right: auto;" alt="When air pressure proved to be ineffective, we drafted our plan for using water instead">
                             <br><br>
                             For our first cardboard prototype we used Ziplock bags to hold the fidget toys and water. Later on, we 
                             upgraded to IV bags and fabric pockets for a more sleek and secure feel.
                             <br><br>
-                            <img id="myImg" src="../photos/firstProto.png" class="normalImg myImages" alt="first prototype">
+                            <img id="myImg" src="../photos/firstProto.png" class="normalImg myImages" style="display: block; margin-left: auto; margin-right: auto;" alt="Our first working prototype ">
                             <br><br>
                             The final composition of the jacket includes a stretchable fabric belt including water pockets situated 
                             on the front and back, secured by Velcro which offers adjustable waist sizing. The potentiometer dial 
                             and buttons are color matched to blend in with its exterior, while the fidget toy compartment is also 
                             hidden away within a foldable pocket
                             <br><br>
-                            <img id="myImg" src="../photos/final proto.png" class="normalImg myImages"  alt="final product">
+                            <img id="myImg" src="../photos/final proto.png" class="normalImg myImages" style="display: block; margin-left: auto; margin-right: auto;" alt="The final jacket with all features fully integrated">
                             <br><br>
                             The Imagine Jacket is designed for versatility, flexibility, and a discreet experience. It prioritizes ease 
                             of use and quick interventions for young adults with Autism Spectrum Disorder.
                             <br><br>
-                            <img id="myImg" src="../photos/the jacket.png" class="normalImg myImages"  alt="final product">
+                            <img id="myImg" src="../photos/the jacket.png" class="normalImg myImages"  alt="Demonstrating the inner pockets which store the temperature control dial and fidget toy compartment">
                             <br><br><br><br>
                         </p>
                         
@@ -286,32 +250,51 @@
                             and lastly a music tab featuring meditative tracks to help ground the user when they are 
                             overwhelmed. 
                             <br><br>
-                            <img id="myImg" src="../photos/the app.png" class="normalImg myImages"  alt="final product">
+                            <img id="myImg" src="../photos/the app.png" class="normalImg myImages"  alt="The final app screens">
                             <br>
-                            <img id="myImg" src="../photos/technicalDiagram.png" class="normalImg myImages"  alt="technical diagram">
+                            <img id="myImg" src="../photos/technicalDiagram.png" class="normalImg myImages"  alt="A technical diagram demonstrating how the way in which physical feedback is passed into the app">
                             <br><br>
                             Sensor input from the jacket is read by Arduino and passed over to Processing through serial 
                             communication. This provides a constant stream of information, one byte at a time (with a baud rate 
                             of 9600), allowing the app to update and provide accurate results for the user to monitor.
                             <br><br>
-                            <img id="myImg" src="../photos/code snippets.png" class="normalImg myImages"  alt="code snippets">
-                            <br>
+                            <img id="myImg" src="../photos/code snippets.png" class="normalImg myImages"  alt="The Arduino code responding to the sensor values from the user">
                             <br><br>
-                            <img id="myImg" src="../photos/circuit diagram.png" class="normalImg myImages"  alt="circuit diagram">
+                            <img id="myImg" src="../photos/circuit diagram.png" class="normalImg myImages"  alt="A circuit diagram outlineing the structure behind the physical prototype">
                             <br><br>
                         </p>
-
-                        <a href="#overview" style="text-decoration-color: #72727200; color: black;">
-                            <h4 class="contactDetails" style="padding-top: 150px;">
-                                Back to Top ↑
-                            </h4>
-                        </a>
-                        <p style="padding-bottom: 100px;"></p>
+                        <!-- <h3 class="sectionHeader ">Reflection</h3>
+                        <p class="projInfoStyle">
+                            Creating this jacket and the paired application was 
+                            a long process containing many iterations. We tested
+                             several methods of integrating certain desired 
+                             features such as deep pressure therapy and monitoring 
+                             user emotion through the app. Our struggle using the air 
+                             pumps during the beginning pushed us to be more 
+                             creative with how we included pressure control. 
+                             Switching over to water pressure and observing the 
+                             leaking issues helped us figure out the issue with 
+                             our air pumps, allowing us to switch back to them. 
+                             Reflecting on this project, there were many 
+                             iterations and specific issues we faced for each 
+                             aspect of the app and jacket. Therefore, in the 
+                             future I would aim to allocate enough time to 
+                             perfect central features such as pressure and heat regulation,
+                             before incorporating additional ones.
+                        </p> -->
                     </div>
                 </div>
-            </section>
 
-        </div>
+                <div class="row" >
+                    <a href="#overview" style="text-decoration-color: #72727200; color: black;">
+                        <h4 class="contactDetails">
+                            Back to Top ↑
+                        </h4>
+                    </a>
+                    <p style="padding-bottom: 5em;"></p>
+                </div>
+            </div><!--end of grid-->
+        </div><!--end of row-->
 
         <div id="myModal" class="modal">
             <span class="close">&times;</span>
@@ -322,7 +305,5 @@
         <script language="JavaScript" type="text/javascript" src="../javascript/jquery-3.7.0.js"></script>   
         <script language="JavaScript" type="text/javascript" src="../javascript/imaginePage.js"></script>
         <script language="JavaScript" type="text/javascript" src="../javascript/modal.js"></script>
-
     </body>
-
 </html>
