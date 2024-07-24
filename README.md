@@ -1,3 +1,3 @@
 # banaina.github.io
 
-an early work in progress
+A portfolio demonstrating my projects and skills.
