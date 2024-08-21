@@ -40,11 +40,11 @@
                 <div class="row">
                     <div class="column">
                         <p class="projInfoStyle" style="margin-right: 8em;">
-                            Kitty the Hat Makin’ Cat, is an interactive simulation game that I created with
-                            Java, it follows a cat named Kitty through her day in the neighborhood.
+                            Kitty the Hat Makin’ Cat, is an interactive simulation game that I coded in
+                            Java using Eclipse as an IDE, it follows a cat named Kitty through her day in the neighborhood.
                             <br><br>
-                            As the final project for my multimedia programming course, the aim of this application was to create 
-                            an interactive simulation which would lead a user through a process and produce an end result. 
+                            As the final project for a multimedia programming course, the aim of this application was to create 
+                            an interactive simulation which would lead a user through some process to produce an end result. 
                             I decided on a activity that involved a playful plot to propel the game.
                         </p>
                     </div>
@@ -63,9 +63,9 @@
                             The story begins outside Kitty’s house where there is an option to customize her avatar, she walks through the 
                             neighborhood and meets her fellow hat-loving friend, Darcy. 
                             This initiates dialogue between the two cats where Darcy asks Kitty to 
-                            help her collect some items to help her create a new sunhat for her collection. 
+                            help her collect some items to create a new sunhat for her collection. 
                             Kitty continues her wak and collects items for Darcy along the way. 
-                            By the end of the process she has gathers items to decorate Darcy’s 
+                            By the end of the process she has gathered enough items to decorate Darcy’s 
                             hat with, the user can choose two items which generate the final product according to what has been selected.
                         </p>
                     </div>
@@ -91,16 +91,16 @@
                         <p class="projInfoStyle">
                             While creating the animation frames for Kitty’s walking motion, 
                             I followed the structure of an 
-                            <a href="https://www.pinterest.com/pin/6192518227894680/" target="_blank">existing sprite sheet</a>
+                            <a href="http://stash.rachelnabors.com/img/codepen/tuna_sprite.png" target="_blank">existing sprite sheet</a>
                             by Rachel Nabors, tracing overtop using the vector tool in Figma, 
                             to create a clean and functional silhouette for my characters.
                         </p>
                         <img  id="myImg" src="../photos/kittydiffhatgif.gif" class="normalImg myImages" style="display: block; margin-left: auto; margin-right: auto;" alt="Kitty walking with the different hat options available within the game">
                     
                         <p class="projInfoStyle">
-                            The facial expressions on both the opening screen, and during 
-                            dialogue with Darcy, were drawn by hand while referencing a these 
-                            three specific photos to portray and create expressive visuals.
+                            The facial expressions on both the opening screen and during 
+                            dialogue with Darcy were drawn by hand while referencing these 
+                            three specific photos to portray expressive visuals.
                         </p>
                         <img  id="myImg" src="../photos/catfaces.png" style="width: 50%; padding-bottom: 1em;display: block; margin-left: auto; margin-right: auto;"
                         class="normalImg myImages"  alt="The images I referened to create my face illustrations">
@@ -149,12 +149,12 @@
                         </p>
                         <h3 class="sectionHeader ">Code Snippets</h3>
                         <p class="projInfoStyle">
-                            For my main character’s avatar, I sliced the sprite sheet containing her walking 
+                            For Kitty's avatar, I sliced the sprite sheet containing her walking 
                             animation within the code through creating an additional SpriteSheet class containing the methods to do so. 
                             An issue I faced as was integrating the option to customize Kitty’s avatar during the animation. 
                             I wanted to include the option for her to wear different fun hats as a playful feature, although 
-                            layering the hats over each frame was a challenging task. In order to resolve 
-                            this, I used a decorator pattern to add accessories over the base sprite sheet 
+                            layering the hats over each frame was a challenging task. To resolve this, I used a decorator 
+                            pattern to add accessories over the base sprite sheet 
                             used for Kitty’s walk. This structural pattern allowed me to add each hat on 
                             top of Kitty’s base avatar through extending from the KittyDecorator class and 
                             overriding its drawKitty() method to include the separate hats.
@@ -163,8 +163,8 @@
                         <img  id="myImg" src="../photos/kitttyCode.png" class="normalImg myImages" style="width: 50%;display: block; margin-left: auto; margin-right: auto;" alt="A snippet of the KittyDecorator class where Kitty's base avatar exists, where the sprite sheet is sliced, and where her animation is defined">
                         <p class="projInfoStyle">
                             For the background I felt that a parallax effect would 
-                            fit the atmosphere I wanted for the game and create a interesting 
-                            background. I did this through making a class that controlled the 
+                            fit the atmosphere I wanted for the game and create a unique environment. 
+                            I did this through making a class that controlled the 
                             direction of movement displayed by the background layers. These layers 
                             would move depending on whether the user clicked the right or left key on their keyboard.
                         </p>
@@ -181,12 +181,10 @@
                         <p class="projInfoStyle">
                             As a part of this project, I was tasked with the 
                             objective of incorporating recursion and Perlin noise 
-                            to visually enhance an aspect of the game. I enjoyed 
-                            implementing these unique visual effects, they added 
-                            interesting interactions within the dialogue. I used 
+                            to visually enhance an aspect of the game. I used 
                             recursion to create a heart that is shown over Darcy’s 
                             head during positive dialogue sequences. Whereas during 
-                            negative sequences, an unhappy face appears featuring a 
+                            negative sequences an unhappy face appears, featuring a 
                             dynamic cloudy affect that utilizes Perlin noise
                         </p>
                         <img  id="myImg" src="../photos/recursion.png" class="normalImg myImages" alt="How I created the recursive heart shape">
@@ -219,9 +217,9 @@
                         interactions outside of the material covered within the course. 
                         I enjoyed the creative freedom this granted me and the experience 
                         I gained learning how to implement various features such as sprite animation,
-                        parallax movement, and creating a unique game ending. Some future modifications
-                        I'd like to make to this game are more avatar customization options, additional interaction
-                        during dialogue sequences, and a increased difficulty in finding items. 
+                        parallax movement, and creating a unique end result. Some future modifications
+                        I'd like to make are more avatar customization options, additional interaction
+                        during dialogue sequences, and added challenges in finding items. 
                     </p>
                     <video style="width: 100%;" loop muted controls list="nodownload" preload="auto">
                         <source src="../photos/finalgame.mp4" type="video/mp4" />
