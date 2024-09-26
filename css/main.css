@@ -1,29 +1,29 @@
 
 @font-face {
     font-family: InterMedium;
-    src: url(fonts/Inter-Medium.ttf);
+    src: url(../fonts/Inter-Medium.ttf);
 }
 @font-face {
     font-family: InterRegular;
-    src: url(fonts/Inter-Regular.ttf);
+    src: url(../fonts/Inter-Regular.ttf);
 }
 @font-face {
     font-family: InterVar;
-    src: url(fonts/Inter-VariableFont_slnt,wght.ttf);
+    src: url(../fonts/Inter-VariableFont_slnt,wght.ttf);
 }
 
 @font-face {
     font-family: PPMoriRegular;
-    src: url(fonts/PPMori-Regular.ttf);
+    src: url(../fonts/PPMori-Regular.ttf);
 }
 
 @font-face {
     font-family: AlteHaasGroteskBold;
-    src: url(fonts/AlteHaasGroteskBold.ttf);
+    src: url(../fonts/AlteHaasGroteskBold.ttf);
 }
 @font-face {
     font-family: AlteHaasGroteskRegular;
-    src: url(fonts/AlteHaasGroteskRegular.ttf);
+    src: url(../fonts/AlteHaasGroteskRegular.ttf);
 }
 
 /* fade in animation reference: https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */

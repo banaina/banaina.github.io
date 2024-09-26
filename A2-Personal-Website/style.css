@@ -74,6 +74,9 @@ a{
 .textFormat{
     font-family: AlteHaasGroteskRegular;
 }
+li{
+    font-family: AlteHaasGroteskRegular;
+}
 
 .normalImg{
     max-width: 100%;
