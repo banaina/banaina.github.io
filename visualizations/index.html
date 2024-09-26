@@ -2,20 +2,112 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../visualizations/style.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>A2 Personal Website</title>
   </head>
-  <body>
+  <body class="textFormat">
+
+    <h1  class="projPgTitle">
+      About Me
+    </h1>
+
+
+    <!-- TODO: add a black/white simple cartoon animation gif of u turning winking/thumbs up -->
+
     <header>
-      <h1>Welcome to My Webpage</h1>
+      <h1>Personal Introduction</h1>
     </header>
-    
     <main>
-      <p>This is where the main content of the webpage goes.</p>
+      <p>
+      Hi, I'm Arriyan! <br><br>
+      Major: Interactive Arts and Technology with a concentration in Interactive Systems <br><br>
+      Interests: Cats, Gaming, Thrifting, Hiking, Baking, Drawing, Crafts, Matcha, and Sushi<br><br>
+      <a  href="../visualizations/visualizations.html" target="_blank">Here are some fun svg visualizations!</a>
+      </p>
+    </main>
+
+    <header>
+      <h1>Some Cool Pictures:</h1>
+    </header>
+    <main>
+      <div class="projInfoStyle scroll-container">
+        <img  id="myImg" src="../visualizations/photos/brownies.jpg" class="normalImg myImages" alt="a bunch of brownies👍">
+        <img  id="myImg" src="../visualizations/photos/catdrawing.jpg" class="normalImg myImages" alt="a drawing I made about a cats imagination">
+        <img  id="myImg" src="../visualizations/photos/cinnamonbuns.jpg" class="normalImg myImages" alt="fluffy cinnamon buns!">
+        <img  id="myImg" src="../visualizations/photos/crochet.jpg" class="normalImg myImages" alt="my poor attempt at crochet...">
+        <img  id="myImg" src="../visualizations/photos/hike.jpg" class="normalImg myImages" alt="pretty scenery during a hike🤯">
+        <img  id="myImg" src="../visualizations/photos/labo.jpg" class="normalImg myImages" alt="Labo, my favorite neighborhood cat ♡">
+        <img  id="myImg" src="../visualizations/photos/matcha.jpg" class="normalImg myImages" alt="some matcha">
+        <img  id="myImg" src="../visualizations/photos/blueberry.jpg" class="normalImg myImages" alt="blueberries being mixed into some batter">
+        <img  id="myImg" src="../visualizations/photos/morematcha.jpg" class="normalImg myImages" alt="some more matcha">
+        <img  id="myImg" src="../visualizations/photos/nifty.jpg" class="normalImg myImages" alt="arts and crafts on a sunny day☀️">
+        <img  id="myImg" src="../visualizations/photos/noodle.png" class="normalImg myImages" alt="Noodle the kitten in a warm blanket">
+        <img  id="myImg" src="../visualizations/photos/thrifting.jpg" class="normalImg myImages" style="width: 34%;" alt="a picture I took while thrifting">
+        <img  id="myImg" src="../visualizations/photos/sabrina.jpg" class="normalImg myImages" alt="Sabrina the cat visiting me on her evening walk">
+        <img  id="myImg" src="../visualizations/photos/sunny.jpg" class="normalImg myImages" alt="some more pretty scenery">
+        <img  id="myImg" src="../visualizations/photos/sushi.jpg" class="normalImg myImages" style="width: 34%;" alt="sushi!">
+      </div>
+    </main>
+
+    <header>
+      <h1>Education</h1>
+    </header>
+    <main>
+      <p>Current Educational Institution: Simon Fraser University <br><br>
+        Some of my Favorite Courses:<br>IAT265: Multimedia Programming for Art and Design
+        <br>IAT267: Introduction to Technological Systems
+        <br>IAT359: Mobile Computing
+      </p>
+    </main>
+
+    <header>
+      <h1>Skills</h1>
+    </header>
+    <main>
+      <p>
+        Skills:<br>
+        Visual Design, Graphic Design, Wireframing, Prototyping, Art Direction<br>
+        Mobile App Development, Game Asset Creation and Implementation<br><br>
+        Programming Tools:<br>
+        Android Studio, Arduino IDE, IntelliJ IDEA, Visual Studio Code, GitHub<br>
+        Java, HTML, CSS, Python, C#
+      </p>
+    </main>
+
+    <header>
+      <h1>Experience</h1>
+    </header>
+    <main>
+      <p>
+        I'm currently a Visual Design Coordinator for 
+        <a  href="https://sfusurge.com/" target="_blank">SFU Surge </a>
+        and a Software Coordinator on an upcoming project with 
+        <a  href="https://enactussfu.ca/" target="_blank">Enactus</a>
+        <br><br>
+        You can also check out one of my favorite projects I made during a IAT265 (Multimedia Programming for Art and Design) course:<br><br>
+        <a href="../pages/kittyProjPg.html" target="_blank">
+          <img style="width: 50%;" src="../photos/kittyHeader3.gif" " alt="project image">
+        </a>
+      </p>
     </main>
     
-    <footer>
-      <p>© 2024 My Webpage</p>
+    <footer style="padding-bottom: 2rem;">
+      <p class="contactDetails" style="padding-bottom: 10px;">
+        <a href="https://www.linkedin.com/in/arriyanali/" target="_blank">Connect </a>
+        | 
+        <a href="mailto:arriyan.ali.a@gmail.com">Email</a>
+      </p>
     </footer>
+
+    <!-- modal reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content center-align" style="width: 35%; height: auto;" id="img01">
+      <div id="caption"></div>
+    </div>
+
+  <!-- <script language="JavaScript" type="text/javascript" src="../javascript/jquery-3.7.0.js"></script> -->
+  <script language="JavaScript" type="text/javascript" src="../visualizations/main.js"></script>
   </body>
 </html>
