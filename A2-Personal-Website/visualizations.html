@@ -3,12 +3,14 @@
   <head>
       <meta charset="UTF-8">
       <title>Visualizations</title>
+      <!-- vega lite content below -->
       <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      <!-- js scripts and style sheets below -->
       <link rel="stylesheet" href="../A2-Personal-Website/main.js"> 
       <link rel="stylesheet" href="../A2-Personal-Website/style.css"> 
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +22,8 @@
       <link rel="manifest" href="/site.webmanifest">
       <meta name="msapplication-TileColor" content="#da532c">
       <meta name="theme-color" content="#ffffff">
-      <!-- vega lite content below -->
-      <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+
       <script>
         const options = {
           config: {
@@ -48,13 +45,8 @@
         // register vega and vega-lite with the API
         vl.register(vega, vegaLite, options);
       </script>
-
-    <style>
-    </style>
   </head>
 
-
-  </head>
   <body>
     <h1  class="projPgTitle">
       Visualizations
@@ -115,26 +107,6 @@
     </svg>
 
     <svg id="myCanvas" width="500" height="500" style="margin-left:2em; border: 2px solid rgb(152, 152, 152);"></svg>
-
-    <h2  class="projPgTitle" style="font-size: 40px;">
-      Vegalite Visualizations On Videogames
-    </h2>
-
-    <div>
-      <p class="textFormat">Global Sales by Genre and Platform</p>
-      <div id="visone" style="padding-bottom: 3rem;"></div>
-
-      <p class="textFormat">Sales Over Time by Platform and Genre</p>
-      <div id="vistwo" style="padding-bottom: 3rem;"></div>
-
-      <p class="textFormat">Regional Sales vs. Platform</p>
-      <div id="visthree" style="padding-bottom: 3rem;"></div>
-
-      <p class="textFormat">Comparing Videogame Trends in North America to Japan</p>
-      <div id="visfour" style="padding-bottom: 3rem; float: left;"></div>
-      <div id="visfive" style="padding-bottom: 3rem; float: right;"></div>
-    </div>
-    
     <script language="JavaScript" type="text/javascript" src="../A2-Personal-Website/vis.js"></script>
   </body>
 </html>
