@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/main.css"> 
     <link rel="stylesheet" href="../css/projgrid.css">
     <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/fonts.css">
     <!-- browser icon details below -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -20,26 +21,28 @@
   <body>  
     <!--SIDEBAR-->
     <nav id="change" class="sidebar sticky">
-      <a id="overviewNav" href="#overview" class="sideNavbar">OVERVIEW<br><br></a>
-      <a id="assetsNav" href="#assets" class="sideNavbar"">ASSETS<br><br></a>
-      <a id="codeNav" href="#code" class="sideNavbar">CODE<br><br></a>
-      <a id="finalgameNav" href="#finalgame" class="sideNavbar">FINAL GAME<br><br></a>
+      <a id="overviewNav" href="#overview" class="sideNavbar">OVERVIEW</a>
+      <a id="assetsNav" href="#assets" class="sideNavbar">ASSETS</a>
+      <a id="codeNav" href="#code" class="sideNavbar">CODE</a>
+      <a id="finalgameNav" href="#finalgame" class="sideNavbar">FINAL GAME</a>
     </nav>
 
-    <a href="../index.html">
-      <img  src="../photos/backButton.png" class="normalImg" style="padding-top: 105px; max-width: 50%;" alt="back to homepage">
-    </a>
+    <div id="topPage">
+      <a href="../index.html">
+        <img  src="../photos/backButton.png" class="normalImg backButton" alt="back to homepage">
+      </a>
+    </div>
     
     <h1  class="projPgTitle" id="overview" >
       Kitty the Hat Makin' Cat
     </h1>
 
-    <div style="padding-top: 2em;" class="row">
+    <div class="row kittyPgHeader">
         <div class="grid">
           <div class="row"></div>
           <div class="row">
             <div class="column">
-              <p class="projInfoStyle" style="margin-right: 8em;">
+              <p class="projInfoStyle headerInfo">
                 Kitty the Hat Makin’ Cat, is an interactive simulation game that I coded in
                 Java using Eclipse as an IDE, it follows a cat named Kitty through her day in the neighborhood.
                 <br><br>
@@ -50,8 +53,8 @@
             </div>
           </div>
 
-          <div class="row" style="grid-column:span 2;">
-            <img src="../photos/optimizedkittywalkgif.gif" class="normalImg" style="width: 100%; padding-bottom: 10em;">
+          <div class="row kittyHeaderImg">
+            <img src="../photos/optimizedkittywalkgif.gif" >
           </div>
 
           <div class="row" >
@@ -86,7 +89,7 @@
                         I outlined these assets and modified the 
                         colors to match the visual aesthetic of my application.
                     </p>
-                    <img  id="myImg" src="../photos/backgrounddemogif.gif" class="normalImg myImages" style="display: block; margin-left: auto; margin-right: auto;" alt="The stacked layers making up the background environment">
+                    <img  id="myImg" src="../photos/backgrounddemogif.gif" class="normalImg myImages projectsImgAdjusted" alt="The stacked layers making up the background environment">
                 
                     <p class="projInfoStyle">
                         While creating the animation frames for Kitty’s walking motion, 
@@ -95,18 +98,18 @@
                         by Rachel Nabors, tracing overtop using the vector tool in Figma, 
                         to create a clean and functional silhouette for my characters.
                     </p>
-                    <img  id="myImg" src="../photos/kittydiffhatgif.gif" class="normalImg myImages" style="display: block; margin-left: auto; margin-right: auto;" alt="Kitty walking with the different hat options available within the game">
+                    <img  id="myImg" src="../photos/kittydiffhatgif.gif" class="normalImg myImages projectsImgAdjusted" alt="Kitty walking with the different hat options available within the game">
                 
                     <p class="projInfoStyle">
                         The facial expressions on both the opening screen and during 
                         dialogue with Darcy were drawn by hand while referencing these 
                         three specific photos to portray expressive visuals.
                     </p>
-                    <img  id="myImg" src="../photos/catfaces.png" style="width: 50%; padding-bottom: 1em;display: block; margin-left: auto; margin-right: auto;"
+                    <img  id="myImg" src="../photos/catfaces.png" class="projectsImgAdjusted smallerImage"
                     class="normalImg myImages"  alt="The images I referened to create my face illustrations">
-                    <img  id="myImg" src="../photos/dialogueone.png" style="width: 50%;display: block; margin-left: auto; margin-right: auto;"
+                    <img  id="myImg" src="../photos/dialogueone.png" class="projectsImgAdjusted smallerImage"
                     class="normalImg myImages"  alt="The dialogue result when the user picks an option Darcy is happy with">
-                    <img  id="myImg" src="../photos/dialoguetwo.png" style="width: 50%;display: block; margin-left: auto; margin-right: auto;"
+                    <img  id="myImg" src="../photos/dialoguetwo.png" class="projectsImgAdjusted smallerImage"
                     class="normalImg myImages"  alt="The dialogue result when the user picks an option Darcy is not happy with">
                     
                     <p class="projInfoStyle">
@@ -121,10 +124,6 @@
                         out, then exported, and lastly incorporated into the application based on these wireframes.
                     </p>
                     <img  id="myImg" src="../photos/figmascreen.png" class="normalImg myImages"  alt="Mapping out and designing the game in Figma">
-
-                    <p class="projInfoStyle">
-                        
-                    </p>
                 </div>
             </div>
 
@@ -159,8 +158,8 @@
                         top of Kitty’s base avatar through extending from the KittyDecorator class and 
                         overriding its drawKitty() method to include the separate hats.
                     </p>
-                    <img  id="myImg" src="../photos/avatarcode.png" class="normalImg myImages" style="width: 50%;display: block; margin-left: auto; margin-right: auto;" alt="The option to customize Kitty's avatar at the beginning of the game">
-                    <img  id="myImg" src="../photos/kitttyCode.png" class="normalImg myImages" style="width: 50%;display: block; margin-left: auto; margin-right: auto;" alt="A snippet of the KittyDecorator class where Kitty's base avatar exists, where the sprite sheet is sliced, and where her animation is defined">
+                    <img  id="myImg" src="../photos/avatarcode.png" class="normalImg myImages projectsImgAdjusted smallerImage" alt="The option to customize Kitty's avatar at the beginning of the game">
+                    <img  id="myImg" src="../photos/kitttyCode.png" class="normalImg myImages projectsImgAdjusted smallerImage" alt="A snippet of the KittyDecorator class where Kitty's base avatar exists, where the sprite sheet is sliced, and where her animation is defined">
                     <p class="projInfoStyle">
                         For the background I felt that a parallax effect would 
                         fit the atmosphere I wanted for the game and create a unique environment. 
@@ -169,7 +168,7 @@
                         would move depending on whether the user clicked the right or left key on their keyboard.
                     </p>
                     <img  id="myImg" src="../photos/parallaxshown.png" class="normalImg myImages" alt="Each of these layers moves individually at different speeds">
-                    <img  id="myImg" src="../photos/parallaxcode.png" class="normalImg myImages" style="width: 50%;display: block; margin-left: auto; margin-right: auto;"  alt="The class defining how each layer from the background moves">
+                    <img  id="myImg" src="../photos/parallaxcode.png" class="normalImg myImages projectsImgAdjusted smallerImage" alt="The class defining how each layer from the background moves">
                     <p class="projInfoStyle">
                         In order to transition between different screens depending on user 
                         interaction and button clicks, I utilized a Finite State Machine (FSM) 
@@ -221,19 +220,18 @@
                     I'd like to make are more avatar customization options, additional interaction
                     during dialogue sequences, and added challenges in finding items. 
                 </p>
-                <video style="width: 100%;" loop muted controls list="nodownload" preload="auto">
+                <video loop muted controls list="nodownload" preload="auto">
                     <source src="../photos/finalgame.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
             </div>
         </div>
         <div class="row" >
-            <a href="#overview" style="text-decoration-color: #72727200; color: black;">
+            <a href="#topPage" class="backToTopLink">
                 <h4 class="contactDetails">
                     Back to Top ↑
                 </h4>
             </a>
-            <p style="padding-bottom: 5em;"></p>
         </div>
     </div>
 

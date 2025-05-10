@@ -1,0 +1,27 @@
+
+@font-face {
+  font-family: InterMedium;
+  src: url(../fonts/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: InterRegular;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: InterVar;
+  src: url(../fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+
+@font-face {
+  font-family: PPMoriRegular;
+  src: url(../fonts/PPMori-Regular.ttf);
+}
+
+@font-face {
+  font-family: AlteHaasGroteskBold;
+  src: url(../fonts/AlteHaasGroteskBold.ttf);
+}
+@font-face {
+  font-family: AlteHaasGroteskRegular;
+  src: url(../fonts/AlteHaasGroteskRegular.ttf);
+}

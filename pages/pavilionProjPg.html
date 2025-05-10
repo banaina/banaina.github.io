@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/main.css"> 
         <link rel="stylesheet" href="../css/projgrid.css">
         <link rel="stylesheet" href="../css/order.css">
+        <link rel="stylesheet" href="../css/fonts.css">
         <!-- browser icon details below -->
         <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -20,26 +21,28 @@
     <body>
         <!--SIDEBAR-->
         <nav id="change" class="sidebar sticky">
-            <a id="overviewNav" href="#overview" class="sideNavbar">OVERVIEW<br><br></a>
-            <a id="ideationNav" href="#ideation" class="sideNavbar"">IDEATION<br><br></a>
-            <a id="designNav" href="#design" class="sideNavbar">DESIGN<br><br></a>
-            <a id="finalmodelNav" href="#finalmodel" class="sideNavbar">FINAL MODEL<br><br></a>
+            <a id="overviewNav" href="#overview" class="sideNavbar">OVERVIEW</a>
+            <a id="ideationNav" href="#ideation" class="sideNavbar">IDEATION</a>
+            <a id="designNav" href="#design" class="sideNavbar">DESIGN</a>
+            <a id="finalmodelNav" href="#finalmodel" class="sideNavbar">FINAL MODEL</a>
         </nav>
 
-        <a href="../index.html">
-            <img  src="../photos/backButton.png" class="normalImg" style="padding-top: 105px; max-width: 50%;" alt="back to homepage">
-        </a>
+        <div id="topPage">
+          <a href="../index.html">
+            <img  src="../photos/backButton.png" class="normalImg backButton" alt="back to homepage">
+          </a>
+        </div>
 
         <h1  class="projPgTitle" id="overview" >
             The Wavy Pavillion
         </h1>
 
-        <div style="padding-top: 2em;" class="row">
+        <div class="row pavillionHeader">
             <div class="grid">
                 <div class="row"></div>
                 <div class="row">
                     <div class="column">
-                        <p class="projInfoStyle" style="margin-right: 8em;">
+                        <p class="projInfoStyle headerInfo">
                             This pavillion explores spatial design concepts and was a project I worked on alongside my partner, Emily Xu.<br>
                             It is a proposed design for a structure located within Holland Park, 
                             created with the goal of showcasing an art sculpture 
@@ -50,8 +53,8 @@
                     </div>      
                 </div>
 
-                <div class="row" style="grid-column:span 2;">
-                    <img src="../photos/pavheader.png" class="normalImg" style="width: 60%; padding-bottom: 10em; display: block; margin-left: auto; margin-right: auto;">
+                <div class="row pavillionHeaderImg">
+                    <img src="../photos/pavheader.png" class="normalImg">
                 </div>
                 <div class="row" >
                     <h3 class="sideHeader">Key Points</h3>
@@ -70,7 +73,7 @@
                             The metal sculptures mirror the natural shapes nearby, acting as a bridge 
                             between the towering city structures and the lush park greenery.
                         </p>
-                        <img  id="myImg" src="../photos/keypoints.png" class="normalImg myImages" style= "display: block; margin-left: auto; margin-right: auto;" alt="Existing structures throughout the area of Holland Park">
+                        <img  id="myImg" src="../photos/keypoints.png" class="normalImg myImages projectsImgAdjusted" alt="Existing structures throughout the area of Holland Park">
                     </div>
                 </div>
 
@@ -87,8 +90,7 @@
                             and fluid shape would complement the shape of the flower 
                             petals appearing throughout the park's sculptures.
                         </p>
-                        <img  id="myImg" src="../photos/sketchesleaf.png" class="normalImg myImages"  
-                        style="width: 70%; display: block; margin-left: auto; margin-right: auto;" alt="Exploring organic forms">
+                        <img  id="myImg" src="../photos/sketchesleaf.png" class="normalImg myImages mediumImage projectsImgAdjusted"  alt="Exploring organic forms">
                         <p class="projInfoStyle">
                             Further design exploration included consideration of the pavilions 
                             location within the park, structure circulation, art sculpture 
@@ -104,7 +106,7 @@
                             oriented toward the central circular area, 
                             inviting prospective visitors into the heart of the park.
                         </p>
-                        <img  id="myImg" src="../photos/location.png" class="normalImg myImages" style="width: 70%; display: block; margin-left: auto; margin-right: auto;"  
+                        <img  id="myImg" src="../photos/location.png" class="normalImg myImages mediumImage projectsImgAdjusted" 
                         alt="The red portion highlights where the pavilion would be, dark blue shows the location of an existing sculpture, and light blue is where the central fountain exists">
                     </div>
                 </div>
@@ -225,7 +227,7 @@
                             certain variables within the diagram as shown below.
                         </p>
                         
-                        <video style="width: 100%;" loop muted controls list="nodownload" preload="auto">
+                        <video loop muted controls list="nodownload" preload="auto">
                             <source src="../photos/parametricdemo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
@@ -243,19 +245,18 @@
                             <img  id="myImg" src="../photos/pavimg7.png" class="normalImg myImages" width="60%" alt="Human eye level view of the sculpture, while sitting down at the edge of the pavilion and facing the entrance">
                             <img  id="myImg" src="../photos/pavimg8.png" class="normalImg myImages" width="60%" alt="Human eye level view of the sculpture, while sitting down at the middle of the pavilion and facing the entrance">
                         </div>
-                        <video style="width: 100%; margin-top: 2em;" loop muted controls list="nodownload" preload="auto">
+                        <video loop muted controls list="nodownload" preload="auto" class="videoContainer">
                             <source src="../photos/flythrough.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
                 </div>
                 <div class="row" >
-                    <a href="#overview" style="text-decoration-color: #72727200; color: black;">
+                    <a href="#topPage" class="backToTopLink">
                         <h4 class="contactDetails">
                             Back to Top ↑
                         </h4>
                     </a>
-                    <p style="padding-bottom: 5em;"></p>
                 </div>
             </div><!-- end of grid -->
         </div><!-- end of row -->

@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/main.css"> 
         <link rel="stylesheet" href="../css/projgrid.css">
         <link rel="stylesheet" href="../css/order.css">
+        <link rel="stylesheet" href="../css/fonts.css">
         <!-- browser icon details below -->
         <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -21,14 +22,17 @@
     <body>
         <!--SIDEBAR-->
         <nav id="change" class="sidebar sticky">
-            <a id="overviewNav" href="#overview" class="sideNavbar">OVERVIEW<br><br></a>
-            <a id="insightNav" href="#insight" class="sideNavbar"">INSIGHT<br><br></a>
-            <a id="initialSolNav" href="#initialSol" class="sideNavbar">INITIAL SOLUTION<br><br></a>
-            <a id="finalProdNav" href="#finalProd" class="sideNavbar">FINAL PRODUCT<br><br></a>
+            <a id="overviewNav" href="#overview" class="sideNavbar">OVERVIEW</a>
+            <a id="insightNav" href="#insight" class="sideNavbar">INSIGHT</a>
+            <a id="initialSolNav" href="#initialSol" class="sideNavbar">INITIAL SOLUTION</a>
+            <a id="finalProdNav" href="#finalProd" class="sideNavbar">FINAL PRODUCT</a>
         </nav>
-        <a href="../index.html">
-            <img  src="../photos/backButton.png" class="normalImg" style="padding-top: 105px; max-width: 50%;" alt="back to homepage">
-        </a>
+
+        <div id="topPage">
+          <a href="../index.html">
+            <img  src="../photos/backButton.png" class="normalImg backButton" alt="back to homepage">
+          </a>
+        </div>
 
         <h1  class="projPgTitle" id="overview" >
             The Imagine Jacket
@@ -294,12 +298,11 @@
                 </div>
 
                 <div class="row" >
-                    <a href="#overview" style="text-decoration-color: #72727200; color: black;">
+                    <a href="#topPage" class="backToTopLink">
                         <h4 class="contactDetails">
                             Back to Top ↑
                         </h4>
                     </a>
-                    <p style="padding-bottom: 5em;"></p>
                 </div>
             </div><!--end of grid-->
         </div><!--end of row-->
