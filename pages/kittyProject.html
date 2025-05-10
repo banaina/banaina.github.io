@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/proj-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arriyan Ali's Kitty The Hat Makin' Cat project.">
+  <title>Game Project</title>
+</head>
+<body>
+  <div class="page-container">
+    <!-- NAVIGATION SECTION -->
+    <section class="nav-section grid nav-col">
+      <a href="../index.html">
+        <img class="nav-logo" src="../assets/navLogo.webp" loading="lazy" alt="Arriyan Ali Logo, directs to homepage" width="60" height="32">
+      </a>
+      <nav class="grid three-col">
+        <a href="../index.html">Home</a>
+        <a href="kittyProject.html">Project</a>
+        <a href="about.html">About</a>
+      </nav>
+    </section>
+    <hr>
+    <!-- END OF NAVIGATION -->
+
+    <!-- PROJECT PAGE CONTENT SECTION -->
+     <section class="grid proj-col">
+      <div class="grid sidebar-sections">
+        <a href="#overview">An Overview</a>
+        <a href="#design">Designing</a>
+        <a href="#functionality">Core Functionality</a>
+        <a href="#reflection">Reflecting</a>
+      </div>
+
+      <div>
+        <!-- OVERVIEW SECTION -->
+        <section id="overview" class="grid proj-overview-col">
+          <div>
+            <h1 class="page-title">Kitty The Hat Makin&#39; Cat</h1>
+            <h2>Showcasing an Interactive Process through a playful storyline</h2>
+            <p>
+              The game centers around Kitty, a clever cat, as she goes about her day 
+              in the neighborhood.  I designed the interface to be simple, clear, and 
+              easy to navigate, making sure players could focus on the experience without 
+              getting lost in confusing menus or controls.
+            </p>
+            <p>
+              The goal was to create a seamless gameplay flow that would appeal to those who 
+              enjoy exploration and decision making, while maintaining a visually appealing 
+              and user-friendly design.
+            </p>
+          </div>
+
+          <div class="grid overview-details-col">
+            <div>
+              <p class="overview-title">Role</p>
+              <p>Illustration</p>
+              <p>Application Programming</p>
+              <p>User Interface Design</p>
+  
+              <p class="overview-title">Tools Used</p>
+              <p>Java</p>
+              <p>Processing</p>
+              <p>Figma</p>
+              <p>Adobe Photoshop</p>
+            </div>
+  
+            <div>
+              <p class="overview-title">Team</p>
+              <p>Just me &#11088;</p>
+  
+              <p class="overview-title">Scope</p>
+              <p>3 Weeks</p>
+              <p>October 2023</p>
+            </div>
+          </div>
+        </section>
+        <!-- END OF OVERVIEW SECTION -->
+
+        <!-- PROJECT PROCESS/CONTENT SECTION-->
+        <video class="proj-video" controls autoplay loop muted poster="../assets//proj-images/projBannervid.mp4">
+          <source src="../assets//proj-images//projBannervid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- DESIGN SECTION-->
+        <section id="design">
+          <h2 class="section-header">Design Process and Thinking</h2>
+          <div class="grid paragraph-col">
+            <h2>Where it began, here&rsquo;s how the project evolved from the very start</h2>
+            <p>
+              My process kicked off by designing the characters, Kitty and Darcy, 
+              and shaping their personalities to shine through the game. This gave 
+              me a chance to create expressive visuals for dialogue sequences and 
+              sprite sheets for their movements.
+            </p>
+          </div>
+          <img class="proj-img proj-first-img" src="../assets/proj-images/charPersonality.png" loading="lazy" alt="Cat character faces in the game" width="688" height="226">
+
+          <div class="paragraph-detail">
+            <h2>For the background, I experimented with both static and dynamic designs, ultimately deciding on <b>parallax movement.</b></h2>
+            <p>This choice added a sense of progression, helping to draw the player deeper into the world as they explored.</p>
+          </div>
+          
+          <div class="grid two-col paragraph-detail">
+            <img src="../assets/proj-images/layerCode.png" loading="lazy" alt="Code controlling the movement of the layers" width="920" height="530">
+            <img  src="../assets/proj-images/backgroundLayers.png" loading="lazy" alt="The game environment layers separated and highlighted " width="1366" height="428">
+          </div>
+
+          <div class="paragraph-detail">
+            <h2>
+              One key decision was adding customizable player hats. It tied into the exploration theme, 
+              <b>letting players personalize their experience</b> without interrupting the flow of the game.
+            </h2>
+            <p>
+              It also gave players a fun way to feel more connected to the world. Throughout the game the 
+              player finds and collects various items, so I designed four key items at this stage as well.
+            </p>
+          </div>
+
+          <div class="grid three-col-leftbias paragraph-detail">
+            <img src="../assets/proj-images/avatarDecorCode.png" loading="lazy" alt="Code displaying avatar customization" width="1174" height="852">
+            <img src="../assets/proj-images/avatarDecor.png" loading="lazy" alt="Showcasing avatar customization options" width="762" height="541">
+            <img src="../assets/proj-images/worldItems.png" loading="lazy" alt="Items within the game world" width="706" height="404">
+          </div>
+        </section>
+        <!-- END OF DESIGN SECTION-->
+
+
+        <!-- FUNCTIONALITY SECTION-->
+        <section id="functionality">
+          <h2 class="section-header">Adding functionality</h2>
+          <div class="grid paragraph-col">
+            <h2>How game flow was implemented</h2>
+            <p>
+              I used a Finite State Machine (FSM) to manage screen transitions, 
+              ensuring a smooth and logical flow between dialogue sequences, menus, 
+              and the final game screens.
+            </p>
+          </div>
+
+          <div class="grid two-col paragraph-detail">
+            <img src="../assets/proj-images/FSMcode.png" loading="lazy" alt="Code describing the Finite State Machine model" width="650" height="374">
+            <img src="../assets/proj-images/dialogueScreen.png" loading="lazy" alt="The menu and dialogue game screens" width="1282" height="664">
+          </div>
+
+          <p class="paragraph-detail">
+            Near the end of the game, the player creates the final product, a hat 
+            made from two collected items, as a special request from Darcy.
+          </p>
+          <img class="proj-img paragraph-detail" src="../assets/proj-images/gameFlow.png" loading="lazy" alt="Showing the flow of screens througout the game" width="3156" height="437">
+
+        </section>
+        <!-- END OF FUNCTIONALITY SECTION -->
+
+        <!-- REFLECTION SECTION-->
+        <section id="reflection">
+          <h2 class="section-header">What I Picked Up</h2>
+          <div class="grid paragraph-col">
+            <h2>One of the biggest takeaways from this project was how small design choices can majorly shape player engagement.</h2>
+            <p>
+              Adding player agency for avatar customization and dialogue choice for example, 
+              provided a sense of ownership without disrupting the flow of the game.
+            </p>
+          </div>
+
+          <p>
+            One major challenge was <b>ensuring smooth transitions between different game states</b>, 
+            especially during dialogue sequences and menus. Through testing and iteration, I 
+            refined the FSM logic for a seamless experience. I also improved the item collection 
+            mechanics, making the collectibles feel more meaningful by tying them to the final 
+            crafted hat, which added purpose to their role in the story and gameplay.
+          </p>
+
+          <p>
+            This project taught me a lot about <b>flow, player experience, and functionality</b>. 
+            Using FSMs for smooth transitions and adding interactive elements like item collection 
+            made the game feel more polished. Moving forward, I&rsquo;ll keep experimenting with 
+            creative design features which make games feel more immersive and player driven.
+          </p>
+        </section>
+        <!-- END OF REFLECTION SECTION -->
+
+        <!-- END OF PROJECT PROCESS/CONTENT SECTION-->
+      </div>
+    </section>
+    <!-- END OF PROJECT PAGE CONTENT SECTION -->
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <hr>
+    <section class="footer">
+      <div class="copyright">
+        <p>&copy; 2025 Arriyan Ali. A little bit of code, a lot of matcha &#x1F375;.</p>
+      </div>
+
+      <div class="grid four-col">
+        <a href="#">
+          <svg class="contact-svg" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.3331 1.96226C2.82418 1.96226 2.49132 2.34523 2.49132 2.70601V12.1178C2.49132 12.4786 2.82418 12.8615 3.3331 12.8615H16.6664C17.1754 12.8615 17.5082 12.4786 17.5082 12.1178V2.70601C17.5082 2.34523 17.1754 1.96226 16.6664 1.96226H3.3331ZM0.841553 2.70601C0.841553 1.3413 2.00869 0.3125 3.3331 0.3125H16.6664C17.9908 0.3125 19.158 1.3413 19.158 2.70601V12.1178C19.158 13.4825 17.9908 14.5113 16.6664 14.5113H3.3331C2.00869 14.5113 0.841553 13.4825 0.841553 12.1178V2.70601Z" fill="#757575"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.9777 2.25202C1.22834 1.87159 1.73991 1.76637 2.12034 2.01701L9.99986 7.20822L17.8794 2.01701C18.2598 1.76637 18.7714 1.87159 19.022 2.25202C19.2727 2.63245 19.1674 3.14402 18.787 3.39466L10.4537 8.88486C10.1783 9.06626 9.82139 9.06626 9.54604 8.88486L1.21271 3.39466C0.832283 3.14402 0.727065 2.63245 0.9777 2.25202Z" fill="#757575"/>
+            </svg>
+        </a>
+
+        <a href="#">
+          <svg class="contact-svg" width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.23806 1.57155C1.70531 1.1043 2.33905 0.841797 2.99985 0.841797H9.66652C9.88529 0.841797 10.0951 0.928704 10.2498 1.0834L15.2498 6.0834C15.4045 6.23809 15.4914 6.44791 15.4914 6.66668V16.6667C15.4914 17.3275 15.2289 17.9612 14.7616 18.4285C14.2944 18.8957 13.6607 19.1582 12.9998 19.1582H2.99985C2.33905 19.1582 1.70531 18.8957 1.23806 18.4285C0.770803 17.9612 0.508301 17.3275 0.508301 16.6667V3.33335C0.508301 2.67255 0.770802 2.03881 1.23806 1.57155ZM2.99985 2.49156C2.77659 2.49156 2.56248 2.58025 2.40462 2.73811C2.24675 2.89598 2.15806 3.11009 2.15806 3.33335V16.6667C2.15806 16.8899 2.24675 17.104 2.40462 17.2619C2.56248 17.4198 2.77659 17.5085 2.99985 17.5085H12.9998C13.2231 17.5085 13.4372 17.4198 13.5951 17.2619C13.7529 17.104 13.8416 16.8899 13.8416 16.6667V7.00836L9.32484 2.49156H2.99985Z" fill="#757575"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66668 0.841797C10.1222 0.841797 10.4916 1.21111 10.4916 1.66668V5.8418H14.6667C15.1222 5.8418 15.4916 6.21111 15.4916 6.66668C15.4916 7.12225 15.1222 7.49156 14.6667 7.49156H9.66668C9.21111 7.49156 8.8418 7.12225 8.8418 6.66668V1.66668C8.8418 1.21111 9.21111 0.841797 9.66668 0.841797Z" fill="#757575"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.67505 12.4997C4.67505 12.0441 5.04436 11.6748 5.49993 11.6748H10.4999C10.9555 11.6748 11.3248 12.0441 11.3248 12.4997C11.3248 12.9553 10.9555 13.3246 10.4999 13.3246H5.49993C5.04436 13.3246 4.67505 12.9553 4.67505 12.4997Z" fill="#757575"/>
+          </svg>
+            
+        </a>
+
+        <a href="#">
+          <svg class="contact-svg" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3332 7.49156C12.2259 7.49156 11.1639 7.93144 10.3809 8.71442C9.59794 9.49741 9.15806 10.5594 9.15806 11.6667V16.6751H10.8416V11.6667C10.8416 11.0059 11.1041 10.3721 11.5714 9.90489C12.0386 9.43763 12.6724 9.17513 13.3332 9.17513C13.994 9.17513 14.6277 9.43763 15.095 9.90489C15.5622 10.3721 15.8247 11.0059 15.8247 11.6667V16.6751H17.5083V11.6667C17.5083 10.5594 17.0684 9.49741 16.2854 8.71442C15.5025 7.93144 14.4405 7.49156 13.3332 7.49156ZM9.21437 7.54787C10.3067 6.45549 11.7883 5.8418 13.3332 5.8418C14.878 5.8418 16.3596 6.45549 17.452 7.54787C18.5444 8.64024 19.1581 10.1218 19.1581 11.6667V17.5C19.1581 17.9556 18.7888 18.3249 18.3332 18.3249H14.9998C14.5443 18.3249 14.175 17.9556 14.175 17.5V11.6667C14.175 11.4434 14.0863 11.2293 13.9284 11.0714C13.7705 10.9136 13.5564 10.8249 13.3332 10.8249C13.1099 10.8249 12.8958 10.9136 12.738 11.0714C12.5801 11.2293 12.4914 11.4434 12.4914 11.6667V17.5C12.4914 17.9556 12.1221 18.3249 11.6665 18.3249H8.33318C7.87761 18.3249 7.5083 17.9556 7.5083 17.5V11.6667C7.5083 10.1218 8.12199 8.64024 9.21437 7.54787Z" fill="#757575"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.841553 7.50017C0.841553 7.04461 1.21086 6.67529 1.66643 6.67529H4.99977C5.45534 6.67529 5.82465 7.04461 5.82465 7.50017V17.5002C5.82465 17.9557 5.45534 18.3251 4.99977 18.3251H1.66643C1.21086 18.3251 0.841553 17.9557 0.841553 17.5002V7.50017ZM2.49132 8.32506V16.6753H4.17489V8.32506H2.49132Z" fill="#757575"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.3331 2.49107C2.8682 2.49107 2.49132 2.86795 2.49132 3.33286C2.49132 3.79776 2.8682 4.17464 3.3331 4.17464C3.79801 4.17464 4.17489 3.79776 4.17489 3.33286C4.17489 2.86795 3.79801 2.49107 3.3331 2.49107ZM0.841553 3.33286C0.841553 1.95681 1.95706 0.841309 3.3331 0.841309C4.70915 0.841309 5.82465 1.95681 5.82465 3.33286C5.82465 4.7089 4.70915 5.82441 3.3331 5.82441C1.95706 5.82441 0.841553 4.7089 0.841553 3.33286Z" fill="#757575"/>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg class="contact-svg" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4343 1.90127C14.0446 0.885852 15.0897 0.703111 15.6611 0.716481C15.9794 0.723929 16.4301 0.859814 16.6852 1.30165C16.8462 1.58044 16.9084 1.89974 16.9364 2.1642C16.966 2.44354 16.9653 2.74678 16.9499 3.04488C16.9256 3.51294 16.8617 4.01965 16.791 4.48707C17.5234 5.43215 17.9998 6.60588 18 7.86931V7.86946C18 10.3366 17.2454 11.9898 15.9928 13.0431C15.1481 13.7534 14.1382 14.1365 13.1427 14.3548C13.1569 14.3907 13.1705 14.4268 13.1836 14.4631C13.3554 14.9401 13.426 15.4475 13.391 15.953V19.1656C13.391 19.6237 13.0197 19.9951 12.5616 19.9951C12.1034 19.9951 11.7321 19.6237 11.7321 19.1656V15.9226C11.7321 15.9008 11.7329 15.8791 11.7346 15.8575C11.7568 15.5753 11.7187 15.2916 11.6228 15.0252C11.5268 14.7589 11.3753 14.516 11.1783 14.3128C10.958 14.0855 10.8862 13.7527 10.9932 13.4549C11.1002 13.1571 11.3674 12.9461 11.682 12.911C12.951 12.7696 14.0969 12.4698 14.9251 11.7734C15.7129 11.1109 16.341 9.97785 16.341 7.86961M12.4343 1.90127C10.4723 1.34141 8.63234 1.47045 6.8418 1.91322C5.78872 1.24669 4.97716 0.935777 4.37923 0.803035C4.05031 0.730013 3.78714 0.711203 3.58651 0.716725C3.48641 0.71948 3.40283 0.728268 3.3354 0.739022C3.30173 0.744392 3.27222 0.750231 3.24683 0.756004C3.23414 0.758889 3.22249 0.761755 3.21189 0.764532C3.20658 0.765921 3.20154 0.767286 3.19676 0.768621C3.19437 0.769289 3.19204 0.769948 3.18978 0.770599C3.18865 0.770924 3.18754 0.771247 3.18644 0.771568L3.18481 0.772047C3.184 0.772285 3.1832 0.772522 3.41908 1.56777L3.1832 0.772522C2.94678 0.842648 2.75382 1.01433 2.65667 1.24099C2.20895 2.28556 2.12643 3.44529 2.41351 4.53502C1.66189 5.48859 1.25119 6.67282 1.25718 7.89675C1.25762 10.3486 2.01381 11.9915 3.26443 13.0431C4.11059 13.7546 5.1231 14.1421 6.12013 14.3684C6.10619 14.4033 6.09279 14.4384 6.07992 14.4737C5.90787 14.9459 5.83514 15.4484 5.86613 15.9498V16.0076C5.23169 16.1376 4.77414 16.1194 4.43615 16.0403C4.01186 15.941 3.69757 15.7277 3.40646 15.4366C3.25623 15.2863 3.11539 15.1186 2.9657 14.9311C2.92669 14.8822 2.88537 14.8298 2.84254 14.7754C2.73227 14.6355 2.61201 14.4828 2.49553 14.3461C2.16839 13.962 1.71188 13.5032 1.03087 13.3329C0.586432 13.2218 0.136072 13.492 0.0249628 13.9365C-0.0861466 14.3809 0.184069 14.8312 0.628507 14.9424C0.78549 14.9816 0.957471 15.0988 1.23264 15.4219C1.32757 15.5333 1.4161 15.6457 1.51707 15.7739C1.5644 15.834 1.61446 15.8976 1.66919 15.9661C1.83049 16.1682 2.01698 16.3933 2.23338 16.6097C2.67551 17.0518 3.25158 17.4669 4.05809 17.6557C4.59084 17.7804 5.1874 17.7977 5.86613 17.6928V19.1656C5.86613 19.6237 6.23751 19.9951 6.69562 19.9951C7.15374 19.9951 7.52512 19.6237 7.52512 19.1656V16.6709C7.52541 16.6583 7.52541 16.6456 7.52512 16.633V15.9226C7.52512 15.9031 7.52443 15.8837 7.52307 15.8644C7.50343 15.585 7.54281 15.3047 7.63867 15.0416C7.73452 14.7786 7.88469 14.5386 8.07941 14.3374C8.2981 14.1114 8.3702 13.7812 8.26559 13.4846C8.16098 13.188 7.89765 12.9761 7.58557 12.9374C6.31239 12.7792 5.16324 12.4722 4.33211 11.7734C3.54259 11.1095 2.91617 9.98351 2.91617 7.8946C2.91617 7.89368 2.91617 7.89275 2.91616 7.89182L2.91615 7.89019C2.91103 6.92599 3.27956 5.99729 3.94442 5.29896C4.16331 5.06905 4.23179 4.73438 4.1208 4.43697C3.87842 3.7875 3.84065 3.08408 4.00528 2.41943C4.01004 2.42046 4.01484 2.42151 4.01968 2.42259C4.42967 2.51361 5.15415 2.77331 6.23376 3.49701C6.43322 3.63071 6.68084 3.67142 6.91261 3.60861C8.73216 3.11547 10.4623 2.98984 12.302 3.59585C12.5449 3.67584 12.811 3.63937 13.0234 3.49701C14.1538 2.73929 14.8936 2.49058 15.2931 2.41097C15.3041 2.56041 15.3042 2.74432 15.2931 2.9589C15.2671 3.45964 15.1845 4.04419 15.0949 4.59333C15.0548 4.83877 15.127 5.08925 15.2915 5.27575C15.9464 6.01814 16.3408 6.93453 16.341 7.86946" fill="#757575"/>
+          </svg> 
+        </a>
+      </div>
+    </section>
+  </footer>
+  <!-- END OF FOOTER -->
+</body>
+</html>

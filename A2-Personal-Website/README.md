@@ -1,1 +1,0 @@
-A website website sharing some things about me + a visualization portfolio page

@@ -1,0 +1,78 @@
+/***SYTLE UNIQUE TO THE HOMEPAGE/INDEX***/
+
+
+/* CONTACT STYLING-------------------*/
+.contact{
+  margin-top: 6rem;
+  height: fit-content;
+}
+
+.contact div img, 
+.contact div p{
+  display: inline-block;
+  align-self: center;
+  vertical-align: middle;
+}
+
+.contact div {
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+}
+/* END OF CONTACT STYLING*/
+
+
+/* PROJECT LISTINGS STYLE-------------------*/
+.projects img{
+  float: right;
+  width: 100%;
+  height: auto;
+  margin-top: 1.85rem;
+  margin-bottom: 1rem;
+}
+
+.projects h2{
+  color: #414141;
+  margin-bottom: .4rem;
+}
+
+.projects p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .85rem;
+  color: #757575;
+}
+
+/* END OF PROJECT LISTING STYLE */
+
+
+/* EXTRA HOMEPAGE GRID STYLING-------------------*/
+/* APPROXIMATELY 640px */
+@media (min-width: 40rem) {
+  .projects{
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
+/* APPROXIMATELY 1024px */
+@media (min-width: 64rem) {
+  .projects{
+    margin-left: 5rem;
+  }
+
+  .side-bio{
+    position: sticky;
+    top: 0; 
+    align-self: start;
+  }
+}
+
+/* APPROXIMATELY 2560px */
+@media (min-width: 120rem) {
+ .projects img {
+  width: 90%;
+  height: auto;
+ }
+  
+}
+/* END OF EXTRA HOMEPAGE GRID STYLING*/
