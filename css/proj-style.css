@@ -61,7 +61,7 @@ p b {
   margin-top: 3rem;
 }
 
-.proj-first-img{
+.proj-smaller-img{
   width: 70%;
   height: auto;
 }
@@ -71,8 +71,21 @@ p b {
   height: auto;
 }
 
-.two-col, .three-col-leftbias {
+.two-col.paragraph-detail, .three-col-leftbias {
   gap: 2rem;
+}
+
+.main-imagine-img{
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shrink-img {
+  object-fit: contain;
+  max-height: 20rem;
 }
 /* EXTRA PROJECT PAGE GRID STYLING-------------------*/
 
@@ -114,7 +127,6 @@ p b {
   .three-col-leftbias{
     grid-template-columns: 1fr;
   }
-  
 }
 
 /* APPROXIMATELY 1024px */
@@ -155,6 +167,10 @@ p b {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 3rem;
   }
+
+  .main-imagine-img{
+    width: 60%;
+  }
 }
 
 /* APPROXIMATELY 2560px */
@@ -164,6 +180,13 @@ p b {
     max-width: 70%;
     height: auto;
   }
-  
+
+  .main-imagine-img{
+    width: 50%;
+  }
+
+  .shrink-img {
+    max-height: 40rem;
+  }
 }
 /* END OF EXTRA PROJECT PAGE GRID STYLING*/

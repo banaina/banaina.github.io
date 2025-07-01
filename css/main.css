@@ -34,6 +34,20 @@ hr {
   margin-top: 2rem;
 }
 
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 .contact div a p, .copyright p{
   color: #757575;
 }
