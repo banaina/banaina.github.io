@@ -1,0 +1,69 @@
+/***SYTLE UNIQUE TO THE ABOUT PAGE***/
+
+/* HOBBIES STYLE-------------------*/
+.hobbies h2 {
+  font-family: PixelifySans, AlteHaasGrotesk, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+.hobbies h3 {
+  font-family: PixelifySans, AlteHaasGrotesk, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: #757575;
+}
+/* END OF HOBBBIES STYLE */
+
+/* EXTRA ABOUT PAGE GRID STYLING-------------------*/
+/* APPROXIMATELY 320px */
+@media (min-width: 20rem) {
+}
+
+/* APPROXIMATELY 640px */
+@media (min-width: 40rem) {
+  .leftbiased-two-col{
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+  }
+  
+  .hobbies h2 {
+    font-size: 2.5rem;
+  }
+
+  .hobbies h3{
+    font-size: 1rem;
+  }
+
+  .hobbies {
+    margin-top: 0rem;
+  }
+}
+
+/* APPROXIMATELY 1024px */
+@media (min-width: 64rem) {
+  .leftbiased-two-col{
+    grid-template-columns: 3fr 2fr;
+    column-gap: 5rem;
+  }
+
+  .hobbies h2 {
+    font-size: 2.5rem;
+  }
+
+  .hobbies h3{
+    font-size: 1.5rem;
+  }
+
+  .hobbies {
+    margin-top: 1rem;
+  }
+}
+
+/* APPROXIMATELY 2560px */
+@media (min-width: 120rem) {
+  .hobbies h2 {
+    font-size: 3.5rem;
+  }
+  
+}
+/* END OF EXTRA ABOUT PAGE GRID STYLING*/
+

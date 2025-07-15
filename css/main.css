@@ -1,529 +1,157 @@
-/* fade in animation reference: https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
-body {
-    font-family: InterMedium;
-    font-style:normal;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-li{
-    font-size: 16px;
-    font-family: AlteHaasGroteskRegular;
-    font-weight: 300; 
-}
-
-a:hover{
-    color:#898989
-}
-a{
-    color: #000000;
-}
-
-video{
-    border-radius: 1rem;
-}
-
-/* for side navigation menu */
-.sidebar{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: sticky;
-  float:right;
-  font-family: InterMedium;
-  font-weight: lighter;
-  letter-spacing: .05rem;
-  margin-right: 1rem;
-  margin-top: 8rem;
-  text-align: right;
-  font-size: 1rem;
-  padding-top: 2rem;
-  position: sticky;
-  right: 0;
-  color: #000000;
-}
-
-.sidebar a{
-  padding-bottom: 1.5rem;
-}
-
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
-
-.sideNavbar{
-    font-family: InterRegular;
-    font-size:x-small;
-    color: #727272;
-    font-weight: bold;
-    text-decoration: none;
-}
-.sideNavbar a:hover{
-    font-family: InterMedium;
-    background-color: #000000;
-}
-
-/* for "hi im arriyan" exerpt */
-.intro{
-    font-weight: lighter;
-    letter-spacing: 2px;
-    font-size: 120px; 
-    font-family: PPMoriRegular; 
-    color: #000000;
-    text-align: left;
-    padding-bottom: 5px;
-}
-
-/* for "siat undergraduate" paragraph */
-.intropara{
-    font-family: AlteHaasGroteskRegular;
-    line-height: 1.5rem;
-    font-size: 20px;
-    font-style: lighter;
-    text-align: left;
-    color: #000000;
-    padding-left: 60%;
-}
-
-.homepage{
-    padding-bottom: 220px;
-}
-
-.clickableText{
-    color: #484848;
-    font-family: AlteHaasGroteskRegular;
-    line-height: 1.5em;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: left;
-    padding-left: 60%;  
-}
+/***FOR MAIN STYLE/DESIGN ELEMENTS***/
 
 
-/* PROJECTS STYLING */
+/* STATIC AND TEXT ELEMENTS -------------------*/
+*{
+  box-sizing: border-box;
+  font-family: AlteHaasGrotesk, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  color: #414141;
+  scroll-behavior: smooth;
 
-.projectsHeader{
-    padding-top: 100px;
-    font-family: PPMoriRegular;
-    font-size:xx-large;
-    font-weight: lighter;
-    border-bottom: 1px solid black;
-    padding-right: 10px;
-    padding-bottom: 3px;
-}
-
-.projDescription{
-    padding-top: 20px;
-    padding-right: 50px;
-    font-size: 16px;
-    font-family: AlteHaasGroteskRegular;
-    font-weight: 300;
-    padding-right: 10px;
-    padding-bottom: 40px;
-    line-height: 1.5em;
-}
-.projTools{
-    padding-top: 20px;
-    font-size: 16px;
-    font-family: AlteHaasGroteskBold;
-    line-height: 1.5em;
-    font-weight:500;
-    padding-right: 10px;
-    padding-bottom: 40px;
+  /* border: 1px solid red !important; */
 }
 
-.projectsImg{
-    width: 100%;
-    height: auto;
-    padding-right: 10px;
-    padding-bottom: 50px;
-}
-.projectsImg:hover{
-    opacity: 0.7;
+p, h1, h2, h3, h4, h5, h6, a {
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+  white-space: normal; 
 }
 
-.normalImg{
-  max-width: 100%;
-  height:auto;
+h1 {
+  font-size: 3.5rem;
 }
 
-.backButton{
-  padding-top: 105px; 
-  width: 3rem;
-  height: auto;
+h2 {
+  color: #757575;
 }
 
-/* modal reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js */
-.modal {
-    display: none;
-    position: fixed; 
-    z-index: 2; 
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9);
-}
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    /* display: block; */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-#myImg:hover {opacity: 0.7;}
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-/* Add Animation */
-.normalImg, #caption {  
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-@keyframes zoom {
-from {transform: scale(0.1)} 
-to {transform: scale(1)}
-}
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-/* end of modal reference */
-
-/* horizontal scrolling reference: https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
-div.scroll-container {
-    background-color: #eeeeee;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-    border-radius: 1em;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-}
-  
-div.scroll-container img {
-    padding: 3rem;
-}
-
-/* scrollbar stylizing reference: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
-/* width */
-::-webkit-scrollbar {
-    width: 1rem;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 1rem;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(117, 117, 117); 
-    border-radius: 1rem;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555555; 
-  }
-
-.contactDetails{
-    padding-top: 100px;
-    font-family: PPMoriRegular;
-    font-size:x-large;
-    font-weight: lighter;
-    border-bottom: 1px solid black;
-    padding-bottom: 3px;
-}
-
-.projPgTitle{
-    font-size: 75px;
-    font-weight: lighter;
-    font-family: PPMoriRegular;
-}
-
-.imagineJacketOverview{
-    padding-top: 140px;
-    margin-right: 370px;
-    font-size: 16px;
-    font-family: InterVar;
-    font-weight: 300;
-    padding-right: 10px;
-    padding-bottom: 40px;
-}
-
-.sideHeader{
-    font-size: 48px;
-    font-family: PPMoriRegular;
-    font-weight: lighter;
-    border-bottom: 1px solid black;
-    padding-bottom: 3px;
-    margin-top: 0px;
-}
-
-.sectionHeader{
-    font-family: PPMoriRegular;
-    color: #8C8C8C;
-    font-size: 25px;
-    padding-bottom: 18px;
-}
-
-.projectInfo{
-    padding-right: 50px;
-    padding-left: 50px;
-}
-.projInfoStyle{
-    font-size: 16px;
-    font-family: AlteHaasGroteskRegular;
-    color: #484848;
-    line-height: 1.5em;
-}
-
-.kittyPgHeader{
-  padding-top: 2rem;
-}
-.headerInfo{
-  margin-right: 8rem;
-}
-.kittyHeaderImg{
-  grid-column:span 2;
-  padding-bottom: 1rem;
-  width: 100%;
-}
-.kittyHeaderImg img {
-  width: 100%;
-}
-
-.pavillionHeader{
-  padding-top: 2rem;
-}
-.pavillionHeaderImg{
-  grid-column:span 2;
-}
-.pavillionHeaderImg .normalImg{
-  width: 60%; 
-  padding-bottom: 10rem; 
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto;
-
-}
-
-.projectsImgAdjusted{
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto;
-}
-.smallerImage{
-  width: 50%;
-}
-.mediumImage{
-  width: 70%;
-}
-video{
-  width: 100%;
-}
-.videoContainer{
+hr {
+  border: 0;
+  height: .2rem;
+  background-color: #F5F5F5;
+  border-radius: 1rem;
   margin-top: 2rem;
 }
 
-.center-align{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    object-fit: cover;
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
-.backToTopLink{
-  text-decoration-color: #72727200; 
-  color: black;
-  margin-bottom: 5rem;
+.contact div a p, .copyright p{
+  color: #757575;
 }
 
+.copyright p{
+  margin-top: 2rem;
+  font-size: .9rem;
+}
+/* END OF STATIC AND TEXT ELEMENTS */
 
-/* MAKING PAGE DETAILS RESPONSIVE */
 
-@media (max-width: 80rem){
-  .imagineJacketOverview{
-      font-size: 15px;
-      margin-left: -20px;
-      margin-right: -10px;
-  }
-  div.scroll-container{
-      width: 500px;
-  }
+/* INTERACTIVE ELEMENTS -------------------*/
+a{
+  text-decoration: none;
+  font-weight: bold;
 }
 
-@media (max-width: 60rem){
-  .intro{
-      font-size: 90px;
-  }
-  .projectsHeader{
-      padding-top: 10px;
-  }
-  .projDescription{
-      font-size: 16px;
-  }
-  .projInfoStyle{
-      font-size: 14px;
-  }
-  li{
-      font-size: 14px;
-  }
-  .projTools{
-      font-size: 16px;
-  }
-  .contactDetails{
-      padding-top: 10px;
-  }
-  .sideNavbar{
-      font-size: x-small;
-  }
-  h2{
-      padding-bottom: 0px;
-  }
-  .imagineJacketOverview{
-      font-size: 14px;
-      margin-left: -30px;
-      margin-right: -20px;
-  }
-  .sideHeader{
-      font-size: 34px;
-  }
-  div.scroll-container{
-      width: 300px;
-  }
+a:hover,
+a:focus, 
+.contact div a p:hover,
+.contact div a p:focus{
+  color: #6FC839;
+  transition: color .2s ease-in-out;
 }
 
-@media (max-width: 40rem){
-  .intro{
-      font-size: 40px;
-  }
-  .intropara{
-      font-size: 10px;
-      padding-left: 20%;
-  }
-  .projDescription{
-      font-size: 10px;
-  }
-  .projInfoStyle{
-      font-size: 10px;
-  }
-  li{
-      font-size: 10px;
-  }
-  .projTools{
-      font-size: 10px;
-  }
-  .clickableText{
-      font-size: 10px;
-      padding-left: 20%;
-  }
-  .projectsHeader{
-      padding-top: 0px;
-  }
-  .sectionHeader{
-      font-size: 14px;
-  }
-  .contactDetails{
-      padding-top: 0px;
-  }
-  .sideNavbar{
-      font-size: xx-small;
-  }
-  .projPgTitle{
-      font-size: 30px;
-  }
-  .imagineJacketOverview{
-      font-size: 10px;
-      margin-left: -30px;
-      margin-right: -30px;
-  }
-  .sideHeader{
-      font-size: 25px;
-  }
-  div.scroll-container{
-      width: 150px;
-  }
+.contact-svg:hover,
+.contact-svg:focus {
+  stroke: #6FC839;
+  transition: color .3s ease-in-out;
 }
 
-@media (max-width: 25rem){
-  .backButton{
-    width: 1.5rem;
-    height: auto;
-  }
-  .projDescription{
-      font-size: 10px;  
-  }
-  .projInfoStyle{
-      font-size: 7px;
-  }
-  li{
-      font-size: 7px;
-  }
-  .projTools{
-      font-size: 7px;
-  }
-  .intro{
-      padding-top: 130px;
-      font-size: 40px;
-  }
-  .sideNavbar{
-      font-size: xx-small;
-      border-radius: 4px;
-  }
-  .projPgTitle{
-      font-size: 20px;
-  }
-  .imagineJacketOverview{
-      font-size: 10px;
-      margin-left: -20px;
-      margin-right: -20px;
-  }
-  .sideHeader{
-      font-size: 10px;
-  }
-  .sectionHeader{
-      font-size: 10px;
-  }
+.contact div a:focus {
+  opacity: 0.5;
+  transition: opacity .3s ease-in-out;
 }
+
+.contact div a p{
+  padding-bottom: .45rem;
+}
+
+.projects a img {
+  transition: opacity 0.s ease-in-out;
+}
+.projects a:hover img,
+.projects a:focus img{
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+/* END OF INTERACTIVE ELEMENTS */
+
+
+/* NAVIGATION -------------------*/
+.nav-logo{
+  width: 2.5rem;
+  height: auto;
+}
+
+nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #757575;
+  margin-left: 5rem;
+  font-size: .9rem;
+  letter-spacing: .05rem;
+}
+
+.nav-section a:hover,
+.nav-section a:focus {
+  opacity: 0.7;
+  transition: opacity .3s ease-in-out;
+}
+/* END OF NAVIGATION */
+
+
+/* FOOTER -------------------*/
+.footer{
+  margin: 4rem;
+}
+
+.footer p {
+  text-align:center;
+}
+
+.footer div{
+  justify-items: center;
+  align-items: center;
+}
+
+.footer .four-col {
+  margin-top: 1rem;
+  width: fit-content;
+  justify-self: center;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer div a:hover,
+.footer div a:focus {
+  stroke: #6FC839;
+  transition: color .3s ease-in-out;
+}
+/* END OF FOOTER */
+
