@@ -1,5 +1,9 @@
 /***SYTLE UNIQUE TO THE ABOUT PAGE***/
 
+.about-descript a{
+  text-decoration: underline;
+}
+
 /* HOBBIES STYLE-------------------*/
 .hobbies h2 {
   font-family: PixelifySans, AlteHaasGrotesk, "Helvetica Neue", sans-serif;

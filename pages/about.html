@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="../css/grid.css">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/about-style.css">
+  <script language="JavaScript" type="text/javascript" src="../javascript/navBurger.js" async></script>
+  <script
+  src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"
+  async
+  ></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A short bio about Arriyan Ali, a designer and storyteller.">
   <title>About Me</title>
@@ -25,84 +31,104 @@
     <!-- NAVIGATION SECTION -->
     <section class="nav-section grid nav-col">
       <a href="../index.html">
-        <img class="nav-logo" src="../assets/navLogo.webp" alt="Arriyan Ali Logo, directs to homepage" width="56" height="29" >
+        <img class="nav-logo" src="../assets/navLogo.webp" loading="lazy" alt="Arriyan Ali Logo, directs to homepage" width="60" height="32">
       </a>
-      <nav class="grid two-col">
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
+      <nav>
+        <span id="nav-label" hidden>Navigation</span>
+        <button 
+          id = "btnOpen"
+          class="navburger-open" 
+          aria-expanded="false" 
+          aria-labelledby="nav-label"
+        >
+          <img src="../assets/hamburger-sidebar.svg" alt="" width="24" height="24">
+        </button>
+        <!-- HAMBURGER MOBILE MENU -->
+        <div class="nav-burger" role="dialog" aria-labelledby="nav-label">
+          <button class="navburger-close" id="btnClose" aria-label="Close">
+            <img src="../assets/close-circle.svg" alt="" width="24" height="24">
+          </button>
+          <ul class="grid two-col">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+          </ul>
+        </div>
       </nav>
     </section>
     <hr>
     <!-- END OF NAVIGATION -->
 
     <!-- MAIN ABOUT PAGE CONTENT SECTION -->
-    <section class="grid leftbiased-two-col">
-      <!-- MAIN BIO -->
-      <div>
-        <h1>Some other things about me!</h1>
-        <h2>
-          When I&apos;m not deep in my usual work, you&apos;ll probably find me doodling or messing around with graphics
-        </h2>
-        <p>
-          As a Visual Design Coordinator at 
-          <a href="https://sfusurge.com/" target="_blank">Surge</a>, 
-          I get to bring ideas to life through wireframing, vector art, and logo 
-          design, it&apos;s basically an excuse to make cool things with cool people &#10022;&#129446;.
-        </p>
+    <main>
+      <section class="grid leftbiased-two-col">
+        <!-- MAIN BIO -->
+        <div class="about-descript">
+          <h1>Some other things about me!</h1>
+          <h2>
+            When I&apos;m not deep in my usual work, you&apos;ll probably find me doodling or messing around with graphics
+          </h2>
+          <p>
+            As a Visual Design Coordinator at 
+            <a href="https://sfusurge.com/" target="_blank">Surge</a>, 
+            I get to bring ideas to life through wireframing, vector art, and logo 
+            design, it&apos;s basically an excuse to make cool things with cool people &#10022;&#129446;.
+          </p>
 
-        <h2>
-          But my love for creativity doesn&apos;t stop at design, I also really enjoy front end development
-        </h2>
-        <p>
-          During my previous role at <a href="https://enactussfu.ca/#/projects/current-projects/unify" target="_blank">Enactus</a>, 
-          I took on the role of Software Coordinator, 
-          working on <a href="https://www.instagram.com/unifysocial.ca/" target="_blank">Unify</a>
-          , an app designed to support 
-          newcomers to Canada. I had the oppurtunity to combine coding, design, and 
-          problem-solving, all wrapped up in a project that made a real impact &#8226; &#x2323; &#8226;!
-        </p>
-      </div>
-
-      <!-- SOME HOBBIES AND INTERESTS -->
-      <div class="hobbies">
-        <h2>⊹ ࣪ ˖ Side Quests ࣪ ˖ ⊹</h2>
-
-        <div>
-          <h3>Learning &amp; Exploring</h3>
-          <ul>
-            <li>Experimenting with Maya scripting and modelling</li>
-            <li>Baking new treats when luck (and my oven) are on my side</li>
-          </ul>
+          <h2>
+            But my love for creativity doesn&apos;t stop at design, I also really enjoy front end development
+          </h2>
+          <p>
+            During my previous role at <a href="https://enactussfu.ca/#/about/what-we-do" target="_blank">Enactus</a>, 
+            I took on the role of Software Coordinator, 
+            working on <a href="https://www.instagram.com/unifysocial.ca/" target="_blank">Unify</a>
+            , an app designed to support 
+            newcomers to Canada. I had the oppurtunity to combine coding, design, and 
+            problem-solving, all wrapped up in a project that made a real impact &#8226; &#x2323; &#8226;!
+          </p>
         </div>
 
-        <div>
-          <h3>Gaming</h3>
-          <ul>
-            <li>Prince of Persia - Sands of Time</li>
-            <li>Assassins Creed - Mirage</li>
-            <li>Yakuza - Like a Dragon</li>
-          </ul>
-        </div>
+        <!-- SOME HOBBIES AND INTERESTS -->
+        <div class="hobbies">
+          <h2>⊹ ࣪ ˖ Side Quests ࣪ ˖ ⊹</h2>
 
-        <div>
-          <h3>Tunes</h3>
-          <ul>
-            <li>Yukarin&apos; Disco - YUKARI FRESH</li>
-            <li>Heaven or Las Vegas - Cocteau Twins</li>
-            <li>Out of Luck - Mariah the Scientist</li>
-          </ul>
-        </div>
+          <div>
+            <h3>Learning &amp; Exploring</h3>
+            <ul>
+              <li>Experimenting with Maya scripting and modelling</li>
+              <li>Baking new treats when luck (and my oven) are on my side</li>
+            </ul>
+          </div>
 
-        <div>
-          <h3>Shows &amp; Movies</h3>
-          <ul>
-            <li>Love, Death, and Robots</li>
-            <li>Adventure Time</li>
-            <li>Fallout</li>
-          </ul>
+          <div>
+            <h3>Gaming</h3>
+            <ul>
+              <li>Prince of Persia - Sands of Time</li>
+              <li>Assassins Creed - Mirage</li>
+              <li>Yakuza - Like a Dragon</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Tunes</h3>
+            <ul>
+              <li>Yukarin&apos; Disco - YUKARI FRESH</li>
+              <li>Heaven or Las Vegas - Cocteau Twins</li>
+              <li>Out of Luck - Mariah the Scientist</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Shows &amp; Movies</h3>
+            <ul>
+              <li>Love, Death, and Robots</li>
+              <li>Adventure Time</li>
+              <li>Fallout</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+    <!-- END OF MAIN ABOUT PAGE CONTENT SECTION -->
   </div>
 
   <!-- FOOTER SECTION -->

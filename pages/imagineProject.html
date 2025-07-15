@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="../css/grid.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/proj-style.css">
+    <script language="JavaScript" type="text/javascript" src="../javascript/navBurger.js" async></script>
+    <script
+    src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"
+    async
+    ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Arriyan Ali's Kitty The Hat Makin' Cat project.">
     <title>Game Project</title>
@@ -19,16 +25,34 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
+  
   <body>
     <div class="page-container">
       <!-- NAVIGATION SECTION -->
       <section class="nav-section grid nav-col">
         <a href="../index.html">
-          <img class="nav-logo" src="../assets/navLogo.webp" alt="Arriyan Ali Logo, directs to homepage" width="56" height="29" >
+          <img class="nav-logo" src="../assets/navLogo.webp" loading="lazy" alt="Arriyan Ali Logo, directs to homepage" width="60" height="32">
         </a>
-        <nav class="grid two-col">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
+        <nav>
+          <span id="nav-label" hidden>Navigation</span>
+          <button 
+            id = "btnOpen"
+            class="navburger-open" 
+            aria-expanded="false" 
+            aria-labelledby="nav-label"
+          >
+            <img src="../assets/hamburger-sidebar.svg" alt="" width="24" height="24">
+          </button>
+          <!-- HAMBURGER MOBILE MENU -->
+          <div class="nav-burger" role="dialog" aria-labelledby="nav-label">
+            <button class="navburger-close" id="btnClose" aria-label="Close">
+              <img src="../assets/close-circle.svg" alt="" width="24" height="24">
+            </button>
+            <ul class="grid two-col">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+            </ul>
+          </div>
         </nav>
       </section>
       <hr>
@@ -36,272 +60,274 @@
 
 
       <!-- PROJECT PAGE CONTENT SECTION -->
-      <section class="grid proj-col">
-        <div class="grid sidebar-sections">
-          <a href="#overview">An Overview</a>
-          <a href="#insight">Collecting Insight</a>
-          <a href="#ideation">Exploring Solutions</a>
-          <a href="#final">Final Product</a>
-        </div>
+      <main>
+        <section class="grid proj-col">
+          <div class="grid sidebar-sections">
+            <a href="#overview">An Overview</a>
+            <a href="#insight">Collecting Insight</a>
+            <a href="#ideation">Exploring Solutions</a>
+            <a href="#final">Final Product</a>
+          </div>
 
-        <div>
-          <!-- OVERVIEW SECTION -->
-          <section id="overview" class="grid proj-overview-col">
-            <div>
-              <h1 class="page-title">The Imagine Jacket</h1>
-              <h2>A smart, adjustable jacket designed with comfort in mind </h2>
-              <p>
-                Offering deep pressure therapy and temperature control, this jacket helps 
-                create a calming personal space. Thoughtfully built for individuals on the 
-                autism spectrum, it features subtle, easy-to-reach controls and a companion 
-                app for extra customization.
-              </p>
-            </div>
-
-            <div class="grid overview-details-col">
+          <div>
+            <!-- OVERVIEW SECTION -->
+            <section id="overview" class="grid proj-overview-col">
               <div>
-                <p class="overview-title">Role</p>
-                <p>Application Programming</p>
-                <p>User Interface Design</p>
-    
-                <p class="overview-title">Tools Used</p>
-                <p>Java</p>
-                <p>Processing</p>
-                <p>Arduino</p>
-                <p>Figma</p>
+                <h1 class="page-title">The Imagine Jacket</h1>
+                <h2>A smart, adjustable jacket designed with comfort in mind </h2>
+                <p>
+                  Offering deep pressure therapy and temperature control, this jacket helps 
+                  create a calming personal space. Thoughtfully built for individuals on the 
+                  autism spectrum, it features subtle, easy-to-reach controls and a companion 
+                  app for extra customization.
+                </p>
               </div>
-    
-              <div>
-                <p class="overview-title">Team</p>
-                <p>App Developer &#091;My Role&#093;</p>
-                <p>Hardware Engineer</p>
-                <p>UX Designer</p>
-    
-                <p class="overview-title">Scope</p>
-                <p>7 Weeks</p>
-                <p>June &#8211; Aug 2023</p>
+
+              <div class="grid overview-details-col">
+                <div>
+                  <p class="overview-title">Role</p>
+                  <p>Application Programming</p>
+                  <p>User Interface Design</p>
+      
+                  <p class="overview-title">Tools Used</p>
+                  <p>Java</p>
+                  <p>Processing</p>
+                  <p>Arduino</p>
+                  <p>Figma</p>
+                </div>
+      
+                <div>
+                  <p class="overview-title">Team</p>
+                  <p>App Developer &#091;My Role&#093;</p>
+                  <p>Hardware Engineer</p>
+                  <p>UX Designer</p>
+      
+                  <p class="overview-title">Scope</p>
+                  <p>7 Weeks</p>
+                  <p>June &#8211; Aug 2023</p>
+                </div>
               </div>
-            </div>
-          </section>
-          <!-- END OF OVERVIEW SECTION -->
+            </section>
+            <!-- END OF OVERVIEW SECTION -->
 
 
-          <img class="main-imagine-img" src="../assets/imagine-proj-imgs/finishedJacket.gif" loading="lazy" alt="Image of the complete Imagine Jacket" width="521" height="521">
+            <img class="main-imagine-img" src="../assets/imagine-proj-imgs/finishedJacket.gif" loading="lazy" alt="Image of the complete Imagine Jacket" width="521" height="521">
 
-          <!-- INSIGHT SECTION-->
-          <section id="insight">
-            <h2 class="section-header">Getting to Know Our User</h2>
-            <div class="grid paragraph-col">
-              <h2>Understanding real needs was our first step in the process.</h2>
-              <p>
-                We dove into research and had the chance to chat with Sersha, 
-                a 14 year old girl living with Asperger. Through this, we uncovered 
-                a few common challenges they often face, things like Feeling anxious, 
-                having trouble focusing, and getting overwhelmed by sensory input. 
-                We created an empathy map to acknowledge and illustrate her concerns.
-              </p>
-            </div>
-            <img class="proj-img" src="../assets/imagine-proj-imgs/empathyMap.png" loading="lazy" alt="Sersha's empathy map" width="1637" height="747">
-
-            <div class="paragraph-detail">
-              <h2>We learned that things like <b>sound isolation, deep pressure therapy, and mindfulness </b>can make a big difference.</h2>
-              <p>Many folks with ASD often feel overwhelmed or anxious, but they also want to feel included, 
-                not singled out or different. In our conversation with Sersha, she shared that she sometimes 
-                worries about standing out or looking different from other kids. That really stuck with 
-                us, so our team made it a priority to design something that feels subtle, comforting, and 
-                easy to blend into everyday life.
-              </p>
-              <p>
-                The diagram below maps out both the user experience of our persona, and the three major pain points we identified.
-              </p>
-            </div>
-            
-            <img class="proj-img" src="../assets/imagine-proj-imgs/xpMap.png" loading="lazy" alt="Sersha's experience map" width="1638" height="747">
-
-            <div class="paragraph-detail">
-              <p>
-                When it comes to managing sensory overload or anxiety, we noticed that people usually 
-                fall into two groups. Those using tools like headphones or weighted vests, and those 
-                going without any support at all. But both paths have their challenges: Without support, 
-                staying focused and calm can be really tough. With support, unfortunately, some people 
-                face bullying or feel like they stand. And when interventions do help, they often 
-                come a bit too late in the moment.
-              </p>
+            <!-- INSIGHT SECTION-->
+            <section id="insight">
+              <h2 class="section-header">Getting to Know Our User</h2>
               <div class="grid paragraph-col">
-                <h2>What&rsquo;s out there and what&rsquo;s not quite working.</h2>
+                <h2>Understanding real needs was our first step in the process.</h2>
                 <p>
-                  While exploring existing products, we found the <a href="https://store.momschoiceawards.com/product/4969" target="_blank">Snug Vest</a> 
-                  by Linda Fraser, an air inflated vest designed for deep pressure therapy. While effective, it lacked 
-                  subtlety and could make wearers feel singled out. The Imagine Jacket builds on its pressure 
-                  system but offers a more discreet, comfortable design that blends in with everyday wear.
+                  We dove into research and had the chance to chat with Sersha, 
+                  a 14 year old girl living with Asperger. Through this, we uncovered 
+                  a few common challenges they often face, things like Feeling anxious, 
+                  having trouble focusing, and getting overwhelmed by sensory input. 
+                  We created an empathy map to acknowledge and illustrate her concerns.
                 </p>
               </div>
-            </div>
-          </section>
-          <!-- END OF INSIGHT SECTION-->
+              <img class="proj-img" src="../assets/imagine-proj-imgs/empathyMap.png" loading="lazy" alt="Sersha's empathy map" width="1637" height="747">
 
-
-          <!-- IDEATION SECTION-->
-          <section id="ideation">
-            <h2 class="section-header">Turning Insight Into Ideas</h2>
-            <div class="grid paragraph-col">
-              <h2>
-                We focused on five key areas. 
-                Deep pressure therapy, anxiety relief, discreet design, temperature control, and calming soundscapes.
-              </h2>
-              <p>
-                The result? A jacket that features adjustable pressure, temperature settings, 
-                and a companion app with mood tracking and soothing soundscapes.
-              </p>
-            </div>
-
-            <h2 class="paragraph-detail">
-              Hidden buttons and dials let the wearer, or their caretaker, stay in control without 
-              drawing attention. <b>Gentle air pumps in the back create a comforting squeeze </b>around the waist.
-            </h2>
-            
-            <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/sketchOne1.png" loading="lazy" alt="Skectch demonstrating how the pressure works" width="1265" height="502">
-
-            <h2 class="paragraph-detail">
-              The pressure pairs with <b>adjustable warmth to mimic a cozy hug</b>. A little dial (potentiometer) 
-              lets the wearer tweak the temperature, sending just the right signal to built in heating pads to keep things comfy.
-            </h2>
-
-            <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/sketchTwo.png" loading="lazy" alt="Skectch demonstrating temperature control" width="1196" height="463">
-
-            <h2 class="paragraph-detail">
-              If things get too toasty, no problem - the jacket has a <b>detachable hood and sleeves</b>, 
-              easily removed with Velcro for a quick cool-down. A GSR sensor at the cuff tracks emotional 
-              responses, helping the wearer or caretaker spot patterns and prep for future moments.
-            </h2>
-
-            <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/sketchThree.png" loading="lazy" alt="Skectch demonstrating the detachable sleeves" width="846" height="333">
-
-            <h2 class="paragraph-detail">
-              As a final fun, soothing touch to the physical portion of the prototype, there&rsquo;s 
-              a <b>hidden fidget toy pocket</b> on the side. When focus wobbles or nerves kick in, the 
-              wearer can unfold the pocket, grab their favorite toy, and tuck it all away again when they&rsquo;re ready.
-            </h2>
-
-            <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/sketchFour.png" loading="lazy" alt="Skectch demonstrating the hidden fidget pocket" width="1265" height="502">
-
-            <!-- APP SOLUTIONS -->
-            <h2 class="section-header">Building a Digital Companion</h2>
-            <div class="grid paragraph-col">
-              <h2>Our digital app went through many twists and turns.</h2>
-              <div>
-                <p>
-                  We went through several iterations, including exploring both web and mobile platforms, 
-                  as well as different jacket control methods.
+              <div class="paragraph-detail">
+                <h2>We learned that things like <b>sound isolation, deep pressure therapy, and mindfulness </b>can make a big difference.</h2>
+                <p>Many folks with ASD often feel overwhelmed or anxious, but they also want to feel included, 
+                  not singled out or different. In our conversation with Sersha, she shared that she sometimes 
+                  worries about standing out or looking different from other kids. That really stuck with 
+                  us, so our team made it a priority to design something that feels subtle, comforting, and 
+                  easy to blend into everyday life.
                 </p>
                 <p>
-                  We initially planned two way control, physical and digital, but found the jacket&rsquo;s 
-                  buttons more accessible. To avoid confusion, we focused the app mainly on monitoring. 
-                  Below are our initial web prototype and early mobile wireframe, both featuring two way 
-                  control before refinement.
+                  The diagram below maps out both the user experience of our persona, and the three major pain points we identified.
                 </p>
               </div>
-            </div>
+              
+              <img class="proj-img" src="../assets/imagine-proj-imgs/xpMap.png" loading="lazy" alt="Sersha's experience map" width="1638" height="747">
 
-            <div class="grid two-col paragraph-detail">
-              <img src="../assets/imagine-proj-imgs/webProtoGif.gif" loading="lazy" alt="An early website prototype of the application" width="2160" height="1440">
-              <img class="shrink-img" src="../assets/imagine-proj-imgs/earlyprotogif.gif" loading="lazy" alt="An early mobile prototype of the application" width="728" height="1620">
-            </div>
+              <div class="paragraph-detail">
+                <p>
+                  When it comes to managing sensory overload or anxiety, we noticed that people usually 
+                  fall into two groups. Those using tools like headphones or weighted vests, and those 
+                  going without any support at all. But both paths have their challenges: Without support, 
+                  staying focused and calm can be really tough. With support, unfortunately, some people 
+                  face bullying or feel like they stand. And when interventions do help, they often 
+                  come a bit too late in the moment.
+                </p>
+                <div class="grid paragraph-col">
+                  <h2>What&rsquo;s out there and what&rsquo;s not quite working.</h2>
+                  <p>
+                    While exploring existing products, we found the <a href="https://store.momschoiceawards.com/product/4969" target="_blank">Snug Vest</a> 
+                    by Linda Fraser, an air inflated vest designed for deep pressure therapy. While effective, it lacked 
+                    subtlety and could make wearers feel singled out. The Imagine Jacket builds on its pressure 
+                    system but offers a more discreet, comfortable design that blends in with everyday wear.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <!-- END OF INSIGHT SECTION-->
 
-            <h2 class="paragraph-detail">
-              Instead, we went with a <b>simple, user-friendly interface</b>. A tracking tab for GSR readings, 
-              a temperature tab to monitor heat levels, and a music tab with calming tracks to help the user feel grounded.
-            </h2>
 
-            <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/the-app.png" loading="lazy" alt="Final mobile prototype screens" width="1704" height="847">
+            <!-- IDEATION SECTION-->
+            <section id="ideation">
+              <h2 class="section-header">Turning Insight Into Ideas</h2>
+              <div class="grid paragraph-col">
+                <h2>
+                  We focused on five key areas. 
+                  Deep pressure therapy, anxiety relief, discreet design, temperature control, and calming soundscapes.
+                </h2>
+                <p>
+                  The result? A jacket that features adjustable pressure, temperature settings, 
+                  and a companion app with mood tracking and soothing soundscapes.
+                </p>
+              </div>
 
-            <div class="grid paragraph-col">
-              <h2>
-                To link the jacket to the app, sensor data is sent from the Arduino to Processing via serial communication
+              <h2 class="paragraph-detail">
+                Hidden buttons and dials let the wearer, or their caretaker, stay in control without 
+                drawing attention. <b>Gentle air pumps in the back create a comforting squeeze </b>around the waist.
               </h2>
+              
+              <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/sketchOne1.png" loading="lazy" alt="Skectch demonstrating how the pressure works" width="1265" height="502">
+
+              <h2 class="paragraph-detail">
+                The pressure pairs with <b>adjustable warmth to mimic a cozy hug</b>. A little dial (potentiometer) 
+                lets the wearer tweak the temperature, sending just the right signal to built in heating pads to keep things comfy.
+              </h2>
+
+              <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/sketchTwo.png" loading="lazy" alt="Skectch demonstrating temperature control" width="1196" height="463">
+
+              <h2 class="paragraph-detail">
+                If things get too toasty, no problem - the jacket has a <b>detachable hood and sleeves</b>, 
+                easily removed with Velcro for a quick cool-down. A GSR sensor at the cuff tracks emotional 
+                responses, helping the wearer or caretaker spot patterns and prep for future moments.
+              </h2>
+
+              <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/sketchThree.png" loading="lazy" alt="Skectch demonstrating the detachable sleeves" width="846" height="333">
+
+              <h2 class="paragraph-detail">
+                As a final fun, soothing touch to the physical portion of the prototype, there&rsquo;s 
+                a <b>hidden fidget toy pocket</b> on the side. When focus wobbles or nerves kick in, the 
+                wearer can unfold the pocket, grab their favorite toy, and tuck it all away again when they&rsquo;re ready.
+              </h2>
+
+              <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/sketchFour.png" loading="lazy" alt="Skectch demonstrating the hidden fidget pocket" width="1265" height="502">
+
+              <!-- APP SOLUTIONS -->
+              <h2 class="section-header">Building a Digital Companion</h2>
+              <div class="grid paragraph-col">
+                <h2>Our digital app went through many twists and turns.</h2>
+                <div>
+                  <p>
+                    We went through several iterations, including exploring both web and mobile platforms, 
+                    as well as different jacket control methods.
+                  </p>
+                  <p>
+                    We initially planned two way control, physical and digital, but found the jacket&rsquo;s 
+                    buttons more accessible. To avoid confusion, we focused the app mainly on monitoring. 
+                    Below are our initial web prototype and early mobile wireframe, both featuring two way 
+                    control before refinement.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid two-col paragraph-detail">
+                <img src="../assets/imagine-proj-imgs/webProtoGif.gif" loading="lazy" alt="An early website prototype of the application" width="2160" height="1440">
+                <img class="shrink-img" src="../assets/imagine-proj-imgs/earlyprotogif.gif" loading="lazy" alt="An early mobile prototype of the application" width="728" height="1620">
+              </div>
+
+              <h2 class="paragraph-detail">
+                Instead, we went with a <b>simple, user-friendly interface</b>. A tracking tab for GSR readings, 
+                a temperature tab to monitor heat levels, and a music tab with calming tracks to help the user feel grounded.
+              </h2>
+
+              <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/the-app.png" loading="lazy" alt="Final mobile prototype screens" width="1704" height="847">
+
+              <div class="grid paragraph-col">
+                <h2>
+                  To link the jacket to the app, sensor data is sent from the Arduino to Processing via serial communication
+                </h2>
+                <p>
+                  This provides a constant stream of information, one byte at a time (with a baud rate of 9600), 
+                  allowing the app to update and provide accurate results for the user to monitor.
+                </p>
+              </div>
+
+              <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/circuit-diagram.png" loading="lazy" alt="A diagram explaining our circuit" width="1694" height="996">
+              <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/code-snippets.png" loading="lazy" alt="A code breakdown for each major Arduino component" width="1271" height="762">
+              <!-- END OF APP SOLUTIONS -->
+
+              <!-- TWEAKS AND TESTING -->
+              <h2 class="section-header">Tweaks, Tests, and Perfecting the Look</h2>
+              <div class="grid paragraph-col">
+                <h2>We ran into our fair share of roadblocks during the process.</h2>
+                <p>
+                  Our air pressure idea sounded great...until the airbags failed to properly 
+                  hold air. After testing balloons and DIY fixes, we made a quick pivot to water 
+                  pressure, which ended up working well. It gave a soothing weight and smoothly 
+                  shifted pressure between the front and back pockets.
+                </p>
+              </div>
+
+              <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/airbag.png" loading="lazy" alt="Experimentation with ways to implement pressure" width="852" height="359">
+              <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/sketchFive.png" loading="lazy" alt="An early sketch of our plan for water pressure" width="852" height="525">
+              
+              <h2 class="paragraph-detail">
+                For our <b>first cardboard prototype</b> we used Ziplock bags to hold the fidget toys and water. 
+                Later on, we upgraded to IV bags and fabric pockets for a more sleek and secure feel.
+              </h2>
+
+              <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/firstProto.png" loading="lazy" alt="Our first cardboard prototype" width="852" height="355">
+              <!-- END OF TWEAKS AND TESTING -->
+
+            </section>
+            <!-- END OF IDEATION SECTION -->
+
+
+            <!-- FINAL PRODUCT SECTION-->
+            <section id="final">
+              <h2 class="section-header">The Final Fit</h2>
+              <h2 class="paragraph-detail">
+                The <b>final jacket </b>features a stretchable fabric belt with water pockets in the front and back, 
+                secured with Velcro for an adjustable fit. Color-matched buttons and a dial blend into the design, 
+                and the fidget toy is tucked away in a hidden foldable pocket.
+              </h2>
+              <img class="proj-img proj-smaller-img" src="../assets/imagine-proj-imgs/final-proto.png" loading="lazy" alt="The final physical prototype" width="852" height="715">
+              <img class="proj-img" src="../assets/imagine-proj-imgs/technicalDiagram.png" loading="lazy" alt="A diagram breaking down how the user would interact with the jacket" width="1758" height="1066">
+            </section>
+            <!-- END OF FINAL PRODUCT SECTION-->
+
+
+            <!-- REFLECTION SECTION-->
+            <section id="reflection">
+              <h2 class="section-header">What I Picked Up</h2>
+              <div class="grid paragraph-col">
+                <h2>The “curb cut effect” and how making accessible products retrospectively helps everyone.</h2>
+                <p>
+                  The “curb cut effect” shows how designs made for people with disabilities often 
+                  end up helping everyone. While this jacket was made for people with ASD, its features 
+                  like deep pressure, warmth, and soundscapes support anyone dealing with anxiety, stress, 
+                  or sensory overload. Discreet design means it blends into everyday life, no stigma, just comfort
+                </p>
+              </div>
+
               <p>
-                This provides a constant stream of information, one byte at a time (with a baud rate of 9600), 
-                allowing the app to update and provide accurate results for the user to monitor.
+                A major challenge my team faced was <b>technical and physical setbacks</b> between faulty 
+                components and configuring parts. In hindsight, building in more buffer time for testing 
+                and troubleshooting, along with regular check-ins to flag issues early, would&rsquo;ve made 
+                the process a lot smoother.
               </p>
-            </div>
 
-            <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/circuit-diagram.png" loading="lazy" alt="A diagram explaining our circuit" width="1694" height="996">
-            <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/code-snippets.png" loading="lazy" alt="A code breakdown for each major Arduino component" width="1271" height="762">
-            <!-- END OF APP SOLUTIONS -->
-
-            <!-- TWEAKS AND TESTING -->
-            <h2 class="section-header">Tweaks, Tests, and Perfecting the Look</h2>
-            <div class="grid paragraph-col">
-              <h2>We ran into our fair share of roadblocks during the process.</h2>
               <p>
-                Our air pressure idea sounded great...until the airbags failed to properly 
-                hold air. After testing balloons and DIY fixes, we made a quick pivot to water 
-                pressure, which ended up working well. It gave a soothing weight and smoothly 
-                shifted pressure between the front and back pockets.
+                Creating a design that looked and felt like everyday clothing while still being functional 
+                also proved to be more difficult than anticipated. During early iterations on the physical 
+                prototype we found parts and materials to be too bulky. This highlighted the importance of 
+                <b>balancing aesthetics and practicality</b> from the very start to avoid costly redesigns later on.
               </p>
-            </div>
-
-            <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/airbag.png" loading="lazy" alt="Experimentation with ways to implement pressure" width="852" height="359">
-            <img class="proj-img paragraph-detail proj-smaller-img" src="../assets/imagine-proj-imgs/sketchFive.png" loading="lazy" alt="An early sketch of our plan for water pressure" width="852" height="525">
-            
-            <h2 class="paragraph-detail">
-              For our <b>first cardboard prototype</b> we used Ziplock bags to hold the fidget toys and water. 
-              Later on, we upgraded to IV bags and fabric pockets for a more sleek and secure feel.
-            </h2>
-
-            <img class="proj-img paragraph-detail" src="../assets/imagine-proj-imgs/firstProto.png" loading="lazy" alt="Our first cardboard prototype" width="852" height="355">
-            <!-- END OF TWEAKS AND TESTING -->
-
-          </section>
-          <!-- END OF IDEATION SECTION -->
+            </section>
+            <!-- END OF REFLECTION SECTION -->
 
 
-          <!-- FINAL PRODUCT SECTION-->
-          <section id="final">
-            <h2 class="section-header">The Final Fit</h2>
-            <h2 class="paragraph-detail">
-              The <b>final jacket </b>features a stretchable fabric belt with water pockets in the front and back, 
-              secured with Velcro for an adjustable fit. Color-matched buttons and a dial blend into the design, 
-              and the fidget toy is tucked away in a hidden foldable pocket.
-            </h2>
-            <img class="proj-img proj-smaller-img" src="../assets/imagine-proj-imgs/final-proto.png" loading="lazy" alt="The final physical prototype" width="852" height="715">
-            <img class="proj-img" src="../assets/imagine-proj-imgs/technicalDiagram.png" loading="lazy" alt="A diagram breaking down how the user would interact with the jacket" width="1758" height="1066">
-          </section>
-          <!-- END OF FINAL PRODUCT SECTION-->
-
-
-          <!-- REFLECTION SECTION-->
-          <section id="reflection">
-            <h2 class="section-header">What I Picked Up</h2>
-            <div class="grid paragraph-col">
-              <h2>The “curb cut effect” and how making accessible products retrospectively helps everyone.</h2>
-              <p>
-                The “curb cut effect” shows how designs made for people with disabilities often 
-                end up helping everyone. While this jacket was made for people with ASD, its features 
-                like deep pressure, warmth, and soundscapes support anyone dealing with anxiety, stress, 
-                or sensory overload. Discreet design means it blends into everyday life, no stigma, just comfort
-              </p>
-            </div>
-
-            <p>
-              A major challenge my team faced was <b>technical and physical setbacks</b> between faulty 
-              components and configuring parts. In hindsight, building in more buffer time for testing 
-              and troubleshooting, along with regular check-ins to flag issues early, would&rsquo;ve made 
-              the process a lot smoother.
-            </p>
-
-            <p>
-              Creating a design that looked and felt like everyday clothing while still being functional 
-              also proved to be more difficult than anticipated. During early iterations on the physical 
-              prototype we found parts and materials to be too bulky. This highlighted the importance of 
-              <b>balancing aesthetics and practicality</b> from the very start to avoid costly redesigns later on.
-            </p>
-          </section>
-          <!-- END OF REFLECTION SECTION -->
-
-
-        </div>
-      </section>
+          </div>
+        </section>
+      </main>
       <!-- END OF PROJECT PAGE CONTENT SECTION -->
 
 

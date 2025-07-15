@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="../css/grid.css">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/proj-style.css">
+  <script language="JavaScript" type="text/javascript" src="../javascript/navBurger.js" async></script>
+  <script
+  src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"
+  async
+  ></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Arriyan Ali's Kitty The Hat Makin' Cat project.">
   <title>Game Project</title>
@@ -24,177 +30,196 @@
     <!-- NAVIGATION SECTION -->
     <section class="nav-section grid nav-col">
       <a href="../index.html">
-        <img class="nav-logo" src="../assets/navLogo.webp" alt="Arriyan Ali Logo, directs to homepage" width="56" height="29" >
+        <img class="nav-logo" src="../assets/navLogo.webp" loading="lazy" alt="Arriyan Ali Logo, directs to homepage" width="60" height="32">
       </a>
-      <nav class="grid two-col">
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
+      <nav>
+        <span id="nav-label" hidden>Navigation</span>
+        <button 
+          id = "btnOpen"
+          class="navburger-open" 
+          aria-expanded="false" 
+          aria-labelledby="nav-label"
+        >
+          <img src="../assets/hamburger-sidebar.svg" alt="" width="24" height="24">
+        </button>
+        <!-- HAMBURGER MOBILE MENU -->
+        <div class="nav-burger" role="dialog" aria-labelledby="nav-label">
+          <button class="navburger-close" id="btnClose" aria-label="Close">
+            <img src="../assets/close-circle.svg" alt="" width="24" height="24">
+          </button>
+          <ul class="grid two-col">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+          </ul>
+        </div>
       </nav>
     </section>
     <hr>
     <!-- END OF NAVIGATION -->
 
     <!-- PROJECT PAGE CONTENT SECTION -->
-     <section class="grid proj-col">
-      <div class="grid sidebar-sections">
-        <a href="#overview">An Overview</a>
-        <a href="#design">Designing</a>
-        <a href="#functionality">Core Functionality</a>
-        <a href="#reflection">Reflecting</a>
-      </div>
+    <main>
+      <section class="grid proj-col">
+        <div class="grid sidebar-sections">
+          <a href="#overview">An Overview</a>
+          <a href="#design">Designing</a>
+          <a href="#functionality">Core Functionality</a>
+          <a href="#reflection">Reflecting</a>
+        </div>
 
-      <div>
-        <!-- OVERVIEW SECTION -->
-        <section id="overview" class="grid proj-overview-col">
-          <div>
-            <h1 class="page-title">Kitty The Hat Makin&#39; Cat</h1>
-            <h2>Showcasing an Interactive Process through a playful storyline</h2>
-            <p>
-              The game centers around Kitty, a clever cat, as she goes about her day 
-              in the neighborhood.  I designed the interface to be simple, clear, and 
-              easy to navigate, making sure players could focus on the experience without 
-              getting lost in confusing menus or controls.
-            </p>
-            <p>
-              The goal was to create a seamless gameplay flow that would appeal to those who 
-              enjoy exploration and decision making, while maintaining a visually appealing 
-              and user-friendly design.
-            </p>
-          </div>
-
-          <div class="grid overview-details-col">
+        <div>
+          <!-- OVERVIEW SECTION -->
+          <section id="overview" class="grid proj-overview-col">
             <div>
-              <p class="overview-title">Role</p>
-              <p>Illustration</p>
-              <p>Application Programming</p>
-              <p>User Interface Design</p>
-  
-              <p class="overview-title">Tools Used</p>
-              <p>Java</p>
-              <p>Processing</p>
-              <p>Figma</p>
-              <p>Adobe Photoshop</p>
+              <h1 class="page-title">Kitty The Hat Makin&#39; Cat</h1>
+              <h2>Showcasing an Interactive Process through a playful storyline</h2>
+              <p>
+                The game centers around Kitty, a clever cat, as she goes about her day 
+                in the neighborhood.  I designed the interface to be simple, clear, and 
+                easy to navigate, making sure players could focus on the experience without 
+                getting lost in confusing menus or controls.
+              </p>
+              <p>
+                The goal was to create a seamless gameplay flow that would appeal to those who 
+                enjoy exploration and decision making, while maintaining a visually appealing 
+                and user-friendly design.
+              </p>
             </div>
-  
-            <div>
-              <p class="overview-title">Team</p>
-              <p>Just me &#11088;</p>
-  
-              <p class="overview-title">Scope</p>
-              <p>3 Weeks</p>
-              <p>October 2023</p>
+
+            <div class="grid overview-details-col">
+              <div>
+                <p class="overview-title">Role</p>
+                <p>Illustration</p>
+                <p>Application Programming</p>
+                <p>User Interface Design</p>
+    
+                <p class="overview-title">Tools Used</p>
+                <p>Java</p>
+                <p>Processing</p>
+                <p>Figma</p>
+                <p>Adobe Photoshop</p>
+              </div>
+    
+              <div>
+                <p class="overview-title">Team</p>
+                <p>Just me &#11088;</p>
+    
+                <p class="overview-title">Scope</p>
+                <p>3 Weeks</p>
+                <p>October 2023</p>
+              </div>
             </div>
-          </div>
-        </section>
-        <!-- END OF OVERVIEW SECTION -->
+          </section>
+          <!-- END OF OVERVIEW SECTION -->
 
-        <!-- PROJECT PROCESS/CONTENT SECTION-->
-        <video class="proj-video" controls autoplay loop muted poster="../assets//proj-images/projBannervid.mp4">
-          <source src="../assets//proj-images//projBannervid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+          <!-- PROJECT PROCESS/CONTENT SECTION-->
+          <video class="proj-video" controls autoplay loop muted poster="../assets//proj-images/projBannervid.mp4">
+            <source src="../assets//proj-images//projBannervid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
 
-        <!-- DESIGN SECTION-->
-        <section id="design">
-          <h2 class="section-header">Design Process and Thinking</h2>
-          <div class="grid paragraph-col">
-            <h2>Where it began, here&rsquo;s how the project evolved from the very start</h2>
-            <p>
-              My process kicked off by designing the characters, Kitty and Darcy, 
-              and shaping their personalities to shine through the game. This gave 
-              me a chance to create expressive visuals for dialogue sequences and 
-              sprite sheets for their movements.
+          <!-- DESIGN SECTION-->
+          <section id="design">
+            <h2 class="section-header">Design Process and Thinking</h2>
+            <div class="grid paragraph-col">
+              <h2>Where it began, here&rsquo;s how the project evolved from the very start</h2>
+              <p>
+                My process kicked off by designing the characters, Kitty and Darcy, 
+                and shaping their personalities to shine through the game. This gave 
+                me a chance to create expressive visuals for dialogue sequences and 
+                sprite sheets for their movements.
+              </p>
+            </div>
+            <img class="proj-img proj-smaller-img" src="../assets/proj-images/charPersonality.png" loading="lazy" alt="Cat character faces in the game" width="688" height="226">
+
+            <div class="paragraph-detail">
+              <h2>For the background, I experimented with both static and dynamic designs, ultimately deciding on <b>parallax movement.</b></h2>
+              <p>This choice added a sense of progression, helping to draw the player deeper into the world as they explored.</p>
+            </div>
+            
+            <div class="grid two-col paragraph-detail">
+              <img src="../assets/proj-images/layerCode.png" loading="lazy" alt="Code controlling the movement of the layers" width="920" height="530">
+              <img  src="../assets/proj-images/backgroundLayers.png" loading="lazy" alt="The game environment layers separated and highlighted " width="1366" height="428">
+            </div>
+
+            <div class="paragraph-detail">
+              <h2>
+                One key decision was adding customizable player hats. It tied into the exploration theme, 
+                <b>letting players personalize their experience</b> without interrupting the flow of the game.
+              </h2>
+              <p>
+                It also gave players a fun way to feel more connected to the world. Throughout the game the 
+                player finds and collects various items, so I designed four key items at this stage as well.
+              </p>
+            </div>
+
+            <div class="grid three-col-leftbias paragraph-detail">
+              <img src="../assets/proj-images/avatarDecorCode.png" loading="lazy" alt="Code displaying avatar customization" width="1174" height="852">
+              <img src="../assets/proj-images/avatarDecor.png" loading="lazy" alt="Showcasing avatar customization options" width="762" height="541">
+              <img src="../assets/proj-images/worldItems.png" loading="lazy" alt="Items within the game world" width="706" height="404">
+            </div>
+          </section>
+          <!-- END OF DESIGN SECTION-->
+
+
+          <!-- FUNCTIONALITY SECTION-->
+          <section id="functionality">
+            <h2 class="section-header">Adding functionality</h2>
+            <div class="grid paragraph-col">
+              <h2>How game flow was implemented</h2>
+              <p>
+                I used a Finite State Machine (FSM) to manage screen transitions, 
+                ensuring a smooth and logical flow between dialogue sequences, menus, 
+                and the final game screens.
+              </p>
+            </div>
+
+            <div class="grid two-col paragraph-detail">
+              <img src="../assets/proj-images/FSMcode.png" loading="lazy" alt="Code describing the Finite State Machine model" width="650" height="374">
+              <img src="../assets/proj-images/dialogueScreen.png" loading="lazy" alt="The menu and dialogue game screens" width="1282" height="664">
+            </div>
+
+            <p class="paragraph-detail">
+              Near the end of the game, the player creates the final product, a hat 
+              made from two collected items, as a special request from Darcy.
             </p>
-          </div>
-          <img class="proj-img proj-smaller-img" src="../assets/proj-images/charPersonality.png" loading="lazy" alt="Cat character faces in the game" width="688" height="226">
+            <img class="proj-img paragraph-detail" src="../assets/proj-images/gameFlow.png" loading="lazy" alt="Showing the flow of screens througout the game" width="3156" height="437">
 
-          <div class="paragraph-detail">
-            <h2>For the background, I experimented with both static and dynamic designs, ultimately deciding on <b>parallax movement.</b></h2>
-            <p>This choice added a sense of progression, helping to draw the player deeper into the world as they explored.</p>
-          </div>
-          
-          <div class="grid two-col paragraph-detail">
-            <img src="../assets/proj-images/layerCode.png" loading="lazy" alt="Code controlling the movement of the layers" width="920" height="530">
-            <img  src="../assets/proj-images/backgroundLayers.png" loading="lazy" alt="The game environment layers separated and highlighted " width="1366" height="428">
-          </div>
+          </section>
+          <!-- END OF FUNCTIONALITY SECTION -->
 
-          <div class="paragraph-detail">
-            <h2>
-              One key decision was adding customizable player hats. It tied into the exploration theme, 
-              <b>letting players personalize their experience</b> without interrupting the flow of the game.
-            </h2>
+          <!-- REFLECTION SECTION-->
+          <section id="reflection">
+            <h2 class="section-header">What I Picked Up</h2>
+            <div class="grid paragraph-col">
+              <h2>One of the biggest takeaways from this project was how small design choices can majorly shape player engagement.</h2>
+              <p>
+                Adding player agency for avatar customization and dialogue choice for example, 
+                provided a sense of ownership without disrupting the flow of the game.
+              </p>
+            </div>
+
             <p>
-              It also gave players a fun way to feel more connected to the world. Throughout the game the 
-              player finds and collects various items, so I designed four key items at this stage as well.
+              One major challenge was <b>ensuring smooth transitions between different game states</b>, 
+              especially during dialogue sequences and menus. Through testing and iteration, I 
+              refined the FSM logic for a seamless experience. I also improved the item collection 
+              mechanics, making the collectibles feel more meaningful by tying them to the final 
+              crafted hat, which added purpose to their role in the story and gameplay.
             </p>
-          </div>
 
-          <div class="grid three-col-leftbias paragraph-detail">
-            <img src="../assets/proj-images/avatarDecorCode.png" loading="lazy" alt="Code displaying avatar customization" width="1174" height="852">
-            <img src="../assets/proj-images/avatarDecor.png" loading="lazy" alt="Showcasing avatar customization options" width="762" height="541">
-            <img src="../assets/proj-images/worldItems.png" loading="lazy" alt="Items within the game world" width="706" height="404">
-          </div>
-        </section>
-        <!-- END OF DESIGN SECTION-->
-
-
-        <!-- FUNCTIONALITY SECTION-->
-        <section id="functionality">
-          <h2 class="section-header">Adding functionality</h2>
-          <div class="grid paragraph-col">
-            <h2>How game flow was implemented</h2>
             <p>
-              I used a Finite State Machine (FSM) to manage screen transitions, 
-              ensuring a smooth and logical flow between dialogue sequences, menus, 
-              and the final game screens.
+              This project taught me a lot about <b>flow, player experience, and functionality</b>. 
+              Using FSMs for smooth transitions and adding interactive elements like item collection 
+              made the game feel more polished. Moving forward, I&rsquo;ll keep experimenting with 
+              creative design features which make games feel more immersive and player driven.
             </p>
-          </div>
+          </section>
+          <!-- END OF REFLECTION SECTION -->
 
-          <div class="grid two-col paragraph-detail">
-            <img src="../assets/proj-images/FSMcode.png" loading="lazy" alt="Code describing the Finite State Machine model" width="650" height="374">
-            <img src="../assets/proj-images/dialogueScreen.png" loading="lazy" alt="The menu and dialogue game screens" width="1282" height="664">
-          </div>
-
-          <p class="paragraph-detail">
-            Near the end of the game, the player creates the final product, a hat 
-            made from two collected items, as a special request from Darcy.
-          </p>
-          <img class="proj-img paragraph-detail" src="../assets/proj-images/gameFlow.png" loading="lazy" alt="Showing the flow of screens througout the game" width="3156" height="437">
-
-        </section>
-        <!-- END OF FUNCTIONALITY SECTION -->
-
-        <!-- REFLECTION SECTION-->
-        <section id="reflection">
-          <h2 class="section-header">What I Picked Up</h2>
-          <div class="grid paragraph-col">
-            <h2>One of the biggest takeaways from this project was how small design choices can majorly shape player engagement.</h2>
-            <p>
-              Adding player agency for avatar customization and dialogue choice for example, 
-              provided a sense of ownership without disrupting the flow of the game.
-            </p>
-          </div>
-
-          <p>
-            One major challenge was <b>ensuring smooth transitions between different game states</b>, 
-            especially during dialogue sequences and menus. Through testing and iteration, I 
-            refined the FSM logic for a seamless experience. I also improved the item collection 
-            mechanics, making the collectibles feel more meaningful by tying them to the final 
-            crafted hat, which added purpose to their role in the story and gameplay.
-          </p>
-
-          <p>
-            This project taught me a lot about <b>flow, player experience, and functionality</b>. 
-            Using FSMs for smooth transitions and adding interactive elements like item collection 
-            made the game feel more polished. Moving forward, I&rsquo;ll keep experimenting with 
-            creative design features which make games feel more immersive and player driven.
-          </p>
-        </section>
-        <!-- END OF REFLECTION SECTION -->
-
-        <!-- END OF PROJECT PROCESS/CONTENT SECTION-->
-      </div>
-    </section>
+          <!-- END OF PROJECT PROCESS/CONTENT SECTION-->
+        </div>
+      </section>
+    </main>
     <!-- END OF PROJECT PAGE CONTENT SECTION -->
   </div>
 
