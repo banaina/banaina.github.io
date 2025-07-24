@@ -24,7 +24,7 @@
 
 /* APPROXIMATELY 640px */
 @media (min-width: 40rem) {
-  .leftbiased-two-col{
+  .abt-two-col{
     grid-template-columns: 1fr;
     column-gap: 0rem;
   }
@@ -40,12 +40,15 @@
   .hobbies {
     margin-top: 0rem;
   }
+  .about-descript{
+    width: 100%;
+  }
 }
 
 /* APPROXIMATELY 1024px */
 @media (min-width: 64rem) {
-  .leftbiased-two-col{
-    grid-template-columns: 3fr 2fr;
+  .abt-two-col{
+    grid-template-columns: 1fr 4fr;
     column-gap: 5rem;
   }
 
@@ -60,13 +63,16 @@
   .hobbies {
     margin-top: 1rem;
   }
-}
-
 /* APPROXIMATELY 2560px */
 @media (min-width: 120rem) {
   .hobbies h2 {
     font-size: 3.5rem;
   }
+
+  .about-descript{
+    width: 60%;
+  }
+}
   
 }
 /* END OF EXTRA ABOUT PAGE GRID STYLING*/
