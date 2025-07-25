@@ -4,6 +4,11 @@
   text-decoration: underline;
 }
 
+.me-img {
+  vertical-align: bottom;
+  justify-self: center;
+}
+
 /* HOBBIES STYLE-------------------*/
 .hobbies h2 {
   font-family: PixelifySans, AlteHaasGrotesk, "Helvetica Neue", sans-serif;

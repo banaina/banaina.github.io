@@ -110,7 +110,7 @@ nav li{
   display: inline-block;
 }
 
-nav ul.grid.two-col {
+nav ul.grid.three-col {
   @media (width<40rem){
     padding: 0;
     justify-content: center;
