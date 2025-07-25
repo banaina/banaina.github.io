@@ -9,6 +9,11 @@
   justify-self: center;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* HOBBIES STYLE-------------------*/
 .hobbies h2 {
   font-family: PixelifySans, AlteHaasGrotesk, "Helvetica Neue", sans-serif;
