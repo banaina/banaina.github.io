@@ -75,6 +75,9 @@ div.grid.two-col{
 
 /* APPROXIMATELY 320px */
 @media (min-width: 20rem) {
+  .grid.three-col.artwork{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* APPROXIMATELY 640px */
@@ -82,10 +85,10 @@ div.grid.two-col{
   .playground-col{
     grid-template-columns: 1fr;
   }
-
-  .grid .three-col .artwork{
+/* 
+  .grid.three-col.artwork{
     grid-template-columns: 1fr 1fr 1fr;
-  }
+  } */
 
   .hobbies {
     position: relative;
