@@ -15,7 +15,7 @@ function setupNavBurger(e){
   }
   else {
     console.log('is desktop');
-    closeMobileMenu(); // close menu if open when switching to desktop
+    // closeMobileMenu(); // close menu if open when switching to desktop
     topNavMenu.removeAttribute('inert');
   }
 }
