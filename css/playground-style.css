@@ -83,7 +83,7 @@ div.grid.two-col{
     grid-template-columns: 1fr;
   }
 
-  .three-col.artwork{
+  .grid .three-col .artwork{
     grid-template-columns: 1fr 1fr 1fr;
   }
 
