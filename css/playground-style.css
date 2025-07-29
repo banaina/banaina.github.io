@@ -44,6 +44,8 @@ div.grid.two-col{
 .category-icon{
   justify-self: end;
   align-self: center;
+  height: 4rem;
+  width: auto;
 }
 
 .category-projimgs *{

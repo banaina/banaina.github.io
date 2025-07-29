@@ -35,6 +35,10 @@ nav a{
     font-size: 1.5rem;
   }
 
+  .copyright p{
+    font-size: .8rem;
+  }
+
 }
 
 /* APPROXIMATELY 640px */
@@ -57,6 +61,10 @@ nav a{
   
   .footer{
     margin: 4rem;
+  }
+
+  .copyright p{
+    font-size: .9rem;
   }
 }
 
